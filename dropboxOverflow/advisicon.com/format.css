@@ -1,0 +1,23 @@
+﻿body{
+    margin: 0px;
+	padding: 0;	
+	font-family: 'Calibri', Arial, San-Serif;
+    font-size: small;
+	color:#444;
+	background: fixed;
+	background-image:url(pix/bkgrdgrayfade.gif);
+	background-repeat: repeat-x;
+		
+}
+
+
+/* Navbar style*/ 
+table.navbar{ 
+	background-color:#000000;
+	width: 950px;
+	height: 40px;
+	vertical-align:middle;
+	margin:auto;
+	border-collapse:collapse;
+	
+}
