@@ -1,0 +1,71 @@
+			<div class="rPopBox">
+				<h3>Current Course Listings</h3>
+				<div>
+					<ul>
+						<%
+						sub process_html2(up_http) 
+							dim xmlhttp2 : set xmlhttp2 = createobject("msxml2.xmlhttp.3.0")
+							xmlhttp2.open "get", up_http, false
+							xmlhttp2.send
+							
+							dim response_array2 : response_array2 = split(xmlhttp2.responseText, "<item>")
+							
+							dim re2 : Set re2 = new regexp
+								re2.Pattern = "<title>.*</title>" 'set up a regular expression to use for searching the items in our array. We're using it to search for the title tags.
+								re2.IgnoreCase = True 'regular expression search is case insensitive. Don't know why we can't just do this in the regexp itself.
+								re2.Global = True 'makes sure match applies to the entire string
+							
+							dim i2
+							for i2 = 1 to ubound(response_array2)
+								if re2.Test(response_array2(i)) then
+									Set Matches2 = re2.Execute(response_array2(i2))
+									for each Match2 in Matches2 'for each item in this new Matches array ...
+										title2 = Replace(Match2.Value,"<title>","") 'remove the opening <title>
+										title2 = Replace(title2,"</title>","") 'remove the closing </title> tag
+										dim reLink2 : Set reLink2 = new regexp 'new regular expression, this one is called reLink. We'll use it to search for the <link> tags
+											reLink2.Pattern = "<link>.*</link>" 'looking for the <link> tags
+											reLink2.IgnoreCase = True 'case insensitive
+											reLink2.Global = True 'search entire string
+											Set linkMatches2 = reLink2.Execute(response_array2(i2))
+												for each linkMatch2 in linkMatches2
+													link2 = Replace(linkMatch2.Value,"<link>","") 'remove the opening <link>
+													link2 = Replace(link2,"</link>", "") 'remove the closing </link>
+												Next
+										dim reStartDate2 : Set reStartDate2 = new regexp 'new regular expression called reDate for finding the date of the event
+											reStartDate2.Pattern = "((January|February|March|April|June|July|August|September|October|November|December)\s+(\d+), (\d+)\s+(at|from)'"\s+\d+:\d\d\s+(a|p)m\s+(<span\sclass=.pipe..*>-|to))|Multiple Dates"'(\b.*\b).?\s+"'(\b.*\b)\s+(\d+).?\s+(\d+).*\-.*"
+											reStartDate2.IgnoreCase = True
+											reStartDate2.Multiline = True
+											reStartDate2.Global = True
+											dim reDate2 : Set reDate2 = new regexp
+												reDate2.Pattern = "((January|February|March|April|June|July|August|September|October|November|December)\s+(\d+), (\d+))|Multiple Dates"
+												reDate2.IgnoreCase = True
+												reDate2.Multiline = True
+												reDate2.Global = True
+												Set startDateMatches = reStartDate2.Execute(response_array2(i2))
+													for each startDateMatch in startDateMatches
+														Set dateMatches = reDate2.Execute(startDateMatch)
+															for each dateMatch in dateMatches
+																eventDate2 = dateMatch.Value
+															Next
+													Next
+										
+										response.write("<li><a href='" & link2 & "' title='register for &ldquo;" & title2 & "&rdquo; on Eventbrite'>" & title2 & " (" & eventDate2 & ")</a></li>") 'build the table row for this event
+									Next
+								else
+									response.write("<p>I couldn't find the title.</p>")
+								end if
+							next 'use a for loop to use the regular expression on the array. The output from the loop will be the line(s) containing the search pattern
+							
+							set re2 = nothing
+							set i2 = nothing
+							set eventDate = nothing
+							set xmlhttp2 = nothing
+							
+						end sub 'free up any memory used by the process
+						
+						process_html2("http://www.eventbrite.com/rss/user_list_events/35721498302") 'point the subprocess to the webpage you want to access
+						%>
+					</ul>
+				</div>
+				<p>For course information and schedules contact us by phone at <a href="tel:+1-360-314-6702" class="tel" title="call our Vancouver, WA office" onclick="_gaq.push(['_trackEvent', 'Phone Calls', 'Headquarters', 'Local']);">360.314.6702</a> or email us at <a href="mailto:info@advisicon.com?subject=Question%20about%20Courses" title="email us" onclick="_gaq.push(['_trackEvent', 'Emails', 'Corporate', 'Inquiry']);">info@advisicon.com</a></p> 
+			</div>							

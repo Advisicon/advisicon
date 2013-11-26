@@ -1,0 +1,108 @@
+﻿<div class="rPopBox">
+				<h3>News &amp; Events</h3>
+				<ul>
+					<%@LANGUAGE=VBSCRIPT%>
+					<%
+					sub process_html(up_http) 
+					dim xmlhttp : set xmlhttp = createobject("msxml2.xmlhttp.3.0")
+					xmlhttp.open "get", up_http, false
+					xmlhttp.send
+					
+					dim response_array : response_array = split(xmlhttp.responseText, "<item>")
+					
+					dim re : Set re = new regexp 'defines the variable re and makes it a new regular expression
+						re.Pattern = "<title>.*</title>" 'set up a regular expression to use for searching the items in our array. We're using it to search for the title tags.
+						re.IgnoreCase = True 'regular expression search is case insensitive. Don't know why we can't just do this in the regexp itself.
+						re.Global = True 'makes sure match applies to the entire string
+					
+				'	response.write(response_array(1))
+					dim i 'declare a new variable, i. We'll use this to step through the items in the array
+					for i = 1 to ubound(response_array) 'steps through the items in the array, starting at the position response_array(1) and continuing to the end of response_array. ubound seems to act a bit like .length, len(), etc. We start at position 1 instead of 0 so that we don't pick up matches from the stuff in the <channel> before the first <item>
+						if re.Test(response_array(i)) then 'if the regular expression pattern defined earlier as re is found within the array item then do the following. re.Test() returns a boolean.
+							Set Matches = re.Execute(response_array(i)) 'make a new array, this one called Matches. Created from the current item in response_array.
+							for each Match in Matches 'for each item in this new Matches array ...
+								title = Replace(Match.Value,"<title>","") 'remove the opening <title>
+								title = Replace(title,"</title>","") 'remove the closing </title> tag
+								dim reLink : Set reLink = new regexp 'new regular expression, this one is called reLink. We'll use it to search for the <link> tags
+									reLink.Pattern = "<link>.*</link>" 'looking for the <link> tags
+									reLink.IgnoreCase = True 'case insensitive
+									reLink.Global = True 'search entire string
+									Set linkMatches = reLink.Execute(response_array(i)) 'make a new array called linkMatches from the current item in response_array()
+										for each linkMatch in linkMatches
+											link = Replace(linkMatch.Value,"<link>","") 'remove the opening <link>
+											link = Replace(link,"</link>", "") 'remove the closing </link>
+										Next
+								
+								response.write("<li><a href='" & link & "' title='read the full article, &ldquo;" & title & "&rdquo; on the blog'>" & title & "</a></li>") 
+							Next
+						else
+							response.write("<p>I couldn't find the title.</p>")
+						end if
+					next 'use a for loop to use the regular expression on the array. The output from the loop will be the line(s) containing the search pattern
+					
+					set re = nothing
+					set xmlhttp = nothing
+					
+				end sub 'free up any memory used by the process
+				
+				process_html("http://www.eventbrite.com/rss/user_list_events/35721498302") 'point the subprocess to the webpage you want to access
+					
+					
+					
+					
+					
+					%>
+				</ul>	
+			</div>
+			<div class="rPopBox">
+				<h3>Current Course Listings</h3>
+				<div>
+					<ul>
+						<%
+						Dim strConnection2, conn2, rs2, strSQL2 
+
+						strConnection2 = "Provider=SQLOLEDB;Server=ADVISICON-COLO;Database=AdvisiconCourses;User Id=webuser; password=webuser;encrypt=true" 
+
+						Set conn2 = Server.CreateObject("ADODB.Connection")
+
+						conn2.Open strConnection2
+
+						Set rs2 = Server.CreateObject("ADODB.recordset")
+						strSQL2 = "SELECT dbo.Courses.CourseName AS [Course Title], dbo.Classes.ClassLocName AS Location, dbo.Classes.ClassCity + ', ' + UPPER(LEFT(dbo.Classes.ClassState,2)) AS [City & State], dbo.Classes.ClassStartDate AS Date, dbo.Classes.ClassLink AS Link FROM dbo.Courses, dbo.Classes WHERE dbo.Courses.CourseID = dbo.Classes.ClassTitle AND dbo.Classes.ClassStartDate > GETDATE() AND LTRIM(RTRIM(CurStatus)) = 'Active' AND LTRIM(RTRIM(RegStatus))='Open' ORDER BY dbo.Classes.ClassStartDate ASC"
+						rs2.open strSQL2, conn2, 3,3
+						
+						%>						
+						<% do until rs2.EOF %>
+						<li>
+							<%
+							for each x in rs2.Fields
+								Select Case x.name
+									Case "Course Title"
+										dim courseTitle
+										courseTitle = x.value
+										
+									Case "Date"
+										dim courseDate
+										courseDate = x.value
+									Case "Link"
+										response.write("<a href='" & x.value & "' target='_blank'>" & courseTitle & ", " & courseDate & "</a>")
+
+								End Select					
+					
+							next
+							%>
+					
+							<%rs2.MoveNext%>
+						</li>
+						<% loop %>
+						<%
+						rs2.Close
+						Set rs2 = Nothing
+
+						conn2.Close
+						Set conn = Nothing
+						%>
+					</ul>
+				</div>
+				<p>For course information and schedules contact us by phone at <a href="tel:+1-360-314-6702" class="tel" title="call our Vancouver, WA office" onclick="_gaq.push(['_trackEvent', 'Phone Calls', 'Headquarters', 'Local']);">360.314.6702</a> or email us at <a href="mailto:info@advisicon.com?subject=Question%20about%20Courses" title="email us" onclick="_gaq.push(['_trackEvent', 'Emails', 'Corporate', 'Inquiry']);">info@advisicon.com</a></p> 
+			</div>							
