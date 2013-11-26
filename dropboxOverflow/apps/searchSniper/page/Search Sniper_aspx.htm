@@ -1,0 +1,82 @@
+
+
+    <head>
+        <title>Search Sniper</title>
+        <style type="text/css">
+            .auto-style1 {
+                font-family: "Segoe UI";
+            }
+        </style>
+</head>
+<form method="post" action="Default.aspx?SPHostUrl=https%3a%2f%2fadvisicon749.sharepoint.com&amp;SPLanguage=en-US&amp;SPClientTag=0&amp;SPProductNumber=15.0.4433.1003" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTUxMTcwNzgxMGRkACUQan37CsJPzmMEw0D1eiVmbvbXWC8sYA3hUXJ0r2k=" />
+</div>
+
+<table style="width:100%;">
+    <tr>
+        <td >
+            <img alt="Search Sniper" src="../Advisicon-raster-96-x-96.png" /></td>
+            <td class="auto-style1" style="text-align:center"><strong>Search Sniper</strong></td>
+            <td style="text-align: right" >
+            <img alt="Search Sniper" src="../AppIcon.png" /></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="auto-style1"><p>Search Sniper is a SharePoint 2013 App Part. Search Sniper is added to a SharePoint page in the same way a web part is, but the Search Sniper App Part can be acquired from an App Store and runs in an environment that should not impact the host SharePoint Services.</p>
+                <p>Search Sniper is designed to simplify creating searches against large SharePoint Lists or Libraries. With Search Sniper, you can search against one or more fields within the list and makes use of various operators such as <em>Contains</em>, <em>Greater Than</em>, <em>Equals</em>, etc.
+                    You can also combine search criteria using <em>And</em>'s and <em>Or</em>'s.
+                </p>
+				<!-- When we were talking, didn't you say that they were also capabled of using pattern matching? I assume that is what the Field Value text entry field is for. Is it able to use standardard regex wildcards or pattern formation? Can you search ignoring case? -->
+            </td>
+        </tr>
+</table>
+<p></p>
+<span class="auto-style1">Installation Instructions:</span>
+    <ul>
+        <li class="auto-style1">Go to any web part page in the host web.</li>
+        <li class="auto-style1">Edit the page so you can add an App Part.</li>
+        <li class="auto-style1">Insert the Search Sniper App Part into your page.</li>
+        <li class="auto-style1">Edit the App Part, setting the name of the target list or library in the App Part custom properties. 
+           &nbsp;(SharePoint Configuration group, SharePointList property).&nbsp; If you do not set a valid libary name you will get an error message &quot;List or Library not found.&nbsp; Please edit the app part and set the list or library name in the SharePoint Configuration section&quot;.
+        </li>
+    </ul>
+
+<span class="auto-style1">  
+    <br />
+    How to Use Search Sniper:</span>
+    <ul>
+        <li class="auto-style1">If you have entered a valid list or library name in the edit web part configuration step, you should see a group of check boxes corresponding to the searchable fields in your list.&nbsp; These check boxes allow you to define which fields you&#39;d like to see in your results set.<ul>
+            <li class="auto-style1">There is a &quot;Check/Uncheck All&quot; check box at the top of the checkbox set.&nbsp; This allows you to quickly uncheck all the fields in your potential results set and select just the ones you&#39;re interested in.&nbsp;&nbsp; If you select all the fields, you may have to scroll the results set to the right to see all the results.</li>
+            </ul>
+        </li>
+        <li class="auto-style1">You&#39;ll find a search criteria grid under the check boxes.&nbsp; The grid includes the following fields:<ul>
+            <li class="auto-style1">Drop down list for Field Names. Should be the same as the names in the pick for display list.</li>
+            <li class="auto-style1">Drop down list of supported conditions.&nbsp; Supported conditions include Contains, Begins With, Equals, Does Not Equal, Greater Than, Greater Than or Equal, Less Than, Less Than or Equal, Is Null, Is Not Null <!-- Since the folks who are using this app are likely not limited to programmers, you should explain the conditions in more depth or provide links to a resource that does. -->.&nbsp; Note that there are some restrictions, for example Contains or Begins With cannot be used with Dates, Numbers, Currency, or Calculated fields.</li>
+            <li class="auto-style1">Field value for comparison, if needed.</li>
+            <li class="auto-style1">Logical And/Or operator, for compound conditions.</li> <!-- Is there a default that is not "and" or "or?" What happens if you only use one criteria and the logical operator is set to And? What happens if it is set to Or?-->
+            <li class="auto-style1">Delete button, to delete criteria when there are more than one.</li> <!-- If there is only 1, the delete X doesn't appear, correct? In that case, why even display the column? -->
+            <li class="auto-style1">Add criteria button, for adding additional search criteria.</li>
+            <li class="auto-style1">Click to Search, which triggers the search.</li> <!-- Can we change this text to something more in line with the Search Sniper theme? The violence is uncomfortable, but it would help to unify the branding. Examples: "Bang!" "Take 'em down" "Aquire target" -->
+            </ul>
+        </li>
+        <li class="auto-style1">Use the add criteria button to add more lines the the criteria grid.&nbsp; You can use the same field on multiple criteria lines, for example you can compare a field greater than or equal to date 1 and less than or equal to date 2.</li> <!-- I'm unclear on your example here. Do you mean that you can use the same field name on mulitple criteria lines? Also, should this content go with the above Add criteria button mention? -->
+        <li class="auto-style1">Date comparisons search the date only (day, month, year). Time of day is not searched.</li>
+        <li class="auto-style1">The results grid is pagable, showing up to 15 items per page.</li> <!-- Swipe enabled? Or is that automatic with 2013? -->
+        <li class="auto-style1">You can also sort by clicking on column headers in the results grid. Clicking on the same header twice toggles between listing the results in ascending and descending order.</li> <!-- Is there an indicator to let the use know that the column is currently being sorted in asc/dec order? -->
+        <li class="auto-style1">Files in document libraries are hyperlinked, so you can access them from the results grid.</li> <!-- File path in title attribute? -->
+    </ul>
+
+    <p>
+        &nbsp;</p>
+    <p class="auto-style1">
+        To report any problems, please contact Advisicon at
+        <a  href="mailto:Info@Advisicon.com">Info@Advisicon.com</a>
+        .</p>
+</form>
+
+
