@@ -1,0 +1,190 @@
+﻿/* ------------------------------------------------------- */
+/* ----------------Style for main content----------------- */
+/* ------------------------------------------------------- */
+
+
+
+body
+{
+    	margin: 0px;
+	padding: 0;	
+	font-family: 'Calibri', Arial, San-Serif;
+    	font-size: small;
+	color:#444;
+	background: fixed;
+	background-image:URL(../pix/bkgrdgrayfade.gif);
+	background-repeat: repeat-x;
+		
+}
+
+
+/* Level-1 Headings */
+h1{
+    font-family: 'Calibri', Arial, San-Serif;
+    font-size: 16pt;
+    color: #666;
+}
+
+h2{
+    font-family: 'Calibri', Arial, San-Serif;
+    font-size: 18pt;
+    color: #800000;
+}
+
+h3{
+    font-family: 'Calibri', Arial, San-Serif;
+    font-size: 14pt;
+    color: #000000;
+}
+
+h4{
+    font-family: 'Calibri', Arial, San-Serif;
+    font-size: large;
+    color: #000000;
+}
+
+h5{
+    font-family: 'Calibri', Arial, San-Serif;
+    font-size: 15pt;
+    color: #800000;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---this section formats the banner, external and internal navigation buttons and links in the top of the page--- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+#banner
+{
+	padding: 0em;
+	margin: 0em;				
+}
+
+/* the externalNav, externalNavList, externalNavList li, and all links reference are all part of the navigation directly under the banner */
+#externalNav
+{
+	background-color:#000000;
+	width: 100%;
+	padding: 0em;
+	margin: 0em;
+	font-size: small;
+}
+
+.externalNavList
+{
+	list-style-type: none;
+	margin: 0em 0em 0em .8em;
+	padding: 0;
+}
+
+/* #externalNav p { margin: 0; padding: 0; } */
+.externalNavList li
+{
+	display:inline;
+	margin-right:1.4em;
+	padding:0em;
+}
+
+.externalNavList a:link{color:#fff;text-decoration:none;} 
+.externalNavList a:visited{color:#fff;text-decoration:none;}
+.externalNavList a:hover{color:#FFCC33;text-decoration:none;} 
+.externalNavList a:active{color:#CCCCCC;text-decoration:none;}
+
+
+/* the vLocalNav, vLocalNavList, and other vLocalNav items format the buttons under the external navigation links in the top of the page */
+#vLocalNav
+{
+background-color:#000000;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+
+
+.vLocalNavList
+{
+list-style-type: none;
+margin: 0em 0em 0em .3em;
+padding: 0;
+}
+
+
+/* #vLocalNav p { margin: 0; padding: 0; } */
+/* #dynoDisplay p { margin: 0; padding: 0; } */
+.vLocalNavList li {display:inline;}
+.vLocalNavList img {border: none;}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------- End of top page section formatting----------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ----------------------- Begin formatting of center page items including left and center -------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* The contentL element styles all items in the left side of the page.*/
+/* Those elements are link buttons, affiliate logos, course buttons, and contact buttons.*/
+/* Its parent is container */
+#contentL
+{
+	margin:0em 0em 0em 0em;
+	padding:0em 0em 0em 0em;
+	width:153px;
+	float:left;
+	background-color:#FFFFFF;
+}
+
+
+#localNav
+{
+	margin:.2em 0em 0em .3em;
+	padding:0em 0em 0em 0em;				
+}
+
+
+/* The contentC element styles high-level elements in the body of the page. specific CSS sheets will style individual elements within the contentC element.*/
+/* The parent element of contentC is the container element.*/
+#contentC
+{
+	margin:0em 0em 0em 0em;
+	padding: 0em 0em 0em 0em;
+	float:left;
+	width:790px;
+	border-left:thin gray solid;
+	background-color:#FFFFFF;
+	height:100%;				
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------- End of center page section formatting----------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+/* Navbar style*/
+/* This sets the background color, width, height, alignment, and margins for all items in the head of the page */
+/* This includes the banner, global links, and buttons */ 
+table.navbar{ 
+	background-color:#000000;
+	width: 950px;
+	height: 40px;
+	vertical-align:middle;
+	margin:auto;
+	border-collapse:collapse;	
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------- Begin formatting of bottom page items ---------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------- End of bottom page section formatting----------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+

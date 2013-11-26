@@ -1,0 +1,620 @@
+/* CSS Document */
+
+
+/* ===================== BEGIN less includes/mixin awesomeness */
+.centerPlacement { /* causes elements to be centered */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.rounded-corners(@radius: 5) { /* creates rounded corners in firefox and chrome, I'll add IE support later */
+	-moz-border-radius: @radius * 1px;
+	border-radius: @radius * 1px;
+}
+@red: #860c0c;
+@transparentRed: rgba(134, 12, 12, .75);
+@gold: #ffcc33;
+.advisiconFont(@height: 12) { /* sets font size, leading, and family */
+	font-family: 'Calibri', Arial, San-Serif;
+	font-size: @height * 1pt;
+	line-height: 1.125;
+}
+/* ===================== END less includes/mixin awesomeness */
+
+
+
+/* Page header style */
+#header{
+     width: 100%;
+     vertical-align: middle;
+	 margin: 0px;
+	 padding: 0px;
+}
+
+/* Page footer style */ /*
+#footer{
+     width: 100%;
+	 vertical-align: middle;
+	 margin: 0px;
+	 padding: 0px;
+} */
+
+/* Body text and page background */
+body{
+    margin: 0px;
+	padding: 0;	
+	font-family: 'Calibri', Arial, San-Serif;
+    font-size: small;
+	color:#444;
+	background: fixed;
+	background-image:url(../../pix/bkgrdgrayfade.gif);
+	background-repeat: repeat-x;
+	#content {
+		width: 950px;
+		.centerPlacement;
+		#advisiconBanner {
+		float: left;
+		}
+		.navbar {
+		background-color: #000000;
+		margin-top: 0;
+		float: left;
+			nav {
+				&#mainNavigation {
+					padding: 2px 0;
+					margin: 0;
+					width: 100%;
+					float: left;
+					a {
+						width: auto;
+						float: left;
+						color: #333333;
+						text-align: left;
+						overflow: hidden;
+						margin: 0;
+						padding: 0px 5px;
+						display: block;
+						list-style: none;
+						font-size: small;
+						padding-right: 2em;
+						display: block;
+							img {
+								border: 0;
+								display: block;
+							}
+							&.tel {
+								padding-right: 10px; 
+								float: right;
+								}
+							&:link { 
+								color: #ffffff; /*White [Jeff]*/
+								text-decoration: none; 
+							} 
+							&:visited { 
+								color: #ffffff; /*White, so there is no indication where you've been. We should probably change this to improve usability. [Jeff]*/
+								text-decoration: none; 
+							} 
+							&:hover { 
+								color: @gold;
+								text-decoration: none;
+							} 
+							&:active{ 
+								color: #cccccc; /*Grey [Jeff]*/
+								text-decoration: none; 
+							}
+					}
+				}
+				&#highlightsNavigation {
+					float: left;
+					a {
+						width: 185px;
+						height: 34px;
+						display: block;
+						float: left;
+						color: rgba(254, 254, 254, .9);
+						text-decoration: none;
+						.advisiconFont(11);
+						line-height: 32px;
+						text-align: center;
+						margin-left: 3px;
+						margin-bottom: 5px;
+						&:link {
+							background: #000000 url(/pix/highlightsNavigation-link.jpg) no-repeat 0 0;
+						}
+						&:visited {
+							background: #000000 url(/pix/highlightsNavigation-link.jpg) no-repeat 0 0;
+						}
+						&:hover {
+							background: #000000 url(/pix/highlightsNavigation-hover.jpg) no-repeat 0 0;
+						}
+						&:active {
+							background: #000000 url(/pix/highlightsNavigation-hover.jpg) no-repeat 0 0;
+						}
+					}
+				}
+			}
+			#accordianAds {
+				padding: 5px 0 0;
+				margin: 0;
+				height: 271px;
+				float: left;
+				.accordion1 {
+					margin: 0;
+					padding-bottom: 0;
+					float: left;
+					li {
+						padding-left: 5px;
+						list-style: none;
+					}
+				}
+			}
+		}
+		#navAndCred {
+			float: left;
+			width: 146px;
+			overflow: hidden;
+		//	background-color: #ffffff;
+			padding-left: 5px;
+			padding-top: 20px;
+			nav {
+				&#secondaryNav {
+					margin-left: 0;
+					float: left;
+					width: 146px;
+					a {
+						height: auto;
+						float: left;
+						display: block;
+						&.secondaryNavButton {
+							height: 27px;
+							width: 143px;
+							background: #ffffff url(/pix/secondary-nav-button.png) no-repeat 0 0;
+							text-decoration: none;
+							text-align: center;
+							font-size: 14px;
+							font-weight: 400;
+							color: #333333;
+							line-height: 27px;
+							margin-bottom: 3px;
+							&:link {
+								background: #ffffff url(/pix/secondary-nav-button.png) no-repeat 0 0;
+							}
+							&:visited {
+							}
+							&:hover {
+								background-image: url(http://advisicon.com/pix/secondary-nav-button-hover.png);
+								color: @red;
+							}
+							&:active {
+								background-image: url(http://advisicon.com/pix/secondary-nav-button-hover.png);
+								color: @red;
+							}
+						}
+						&.longText {
+						}
+					}
+				}
+			}
+			ul {
+				&#credentials {
+					float: left;
+					margin-left: 0;
+					list-style: none;
+					li {
+						height: auto;
+					}
+				}
+			}
+		}
+		aside {
+			background-color: #ffffff;
+			&#secondaryContent {
+				width: 228px;
+				padding-top: 20px;
+				float: right;
+				div {
+					&.rPopBox {
+						margin:0em 3px 1em 0em;
+						border: 1px solid @red;
+						height: 100%; 
+						width:220px;		
+						float: right;
+						.rounded-corners(5);
+						h3 {
+							font-size: medium;
+							margin: .3em 5px .5em;
+							color: maroon;
+							width: 200px;
+						}
+						ul {
+							padding-bottom: 2.5em;
+							font-size: 14px;
+							list-style-type: none;
+							margin-left: 5px;
+							margin-right: 5px;
+							&.otherCommsList {
+								clear:right;
+								list-style-type: none;
+								margin:0em 5px .7em 5px;
+								padding:0;
+								li {
+									height: 42px;
+									width: 45px;
+									display: inline;
+									margin: 0em 0em 1em 0em;
+									overflow: visible;
+								}
+							}
+							li {
+								font-weight: bolder;
+								float: left;
+								height: auto;
+								padding-bottom: 1em;
+								width: 200px;
+								}
+							a {
+								text-decoration: none;
+								&:hover {
+									border-bottom: 1px solid @red;
+								}
+								&:active {
+									border-bottom: 1px solid @red;
+								}
+							}
+							p {
+								margin-right: .2em;
+								margin-left: .2em;
+								font-size: 14px;
+							}
+						}
+						p {
+							margin-right: 5px;
+							margin-left: 5px;
+						}
+						#tweets {
+							float: left;
+							padding-top: 1em;
+							padding-bottom: .5em;
+							overflow: hidden;
+							.tweet {
+								float: left;
+								padding-bottom: 1em;
+								font-size: 14px;
+								a {
+									float: left;
+									margin-left: 5px;
+									&:hover {
+										border-bottom: 1px solid @red;
+										&.twitterProfilePic {
+											border-bottom: none;
+										}
+									}
+									&:active {
+										border-bottom: 1px solid @red;
+										&.twitterProfilePic {
+											border-bottom: none;
+										}
+									}
+									img {
+										opacity: .90;
+										width: 48px;
+										height: 48px;
+										.rounded-corners(5);
+										&:hover {
+											opacity: 1;
+										}
+									}
+								}
+								.content {
+									float: left;
+									width: 152px;
+									margin-left: 5px;
+									a {
+										margin: 0;
+										float: none;
+										font-weight: bolder;
+										text-decoration: none;
+										overflow: hidden;
+										&:hover {
+											color: @red;
+										}
+									}
+								}
+							}
+						}
+						#portfolio {
+							padding:0;
+							margin: 0;
+							height:220px;
+							li {
+								height: 220px;
+								a {
+									img {
+										margin-left: auto;
+										margin-right: auto;
+										display: block;
+										border: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		#main{
+			width: 517px;
+			float: left;
+			vertical-align:top;
+			font-size: medium;
+			margin-top:0px;
+			padding-top:0px;
+			padding-left: 14px;
+			margin-left: .3em;
+			h1 {
+				.advisiconFont(18); 
+				color: @red;
+			}
+			h2 {
+				.advisiconFont (16);
+				color: @red;
+				padding-top: 1em;
+			}
+			.downloadables {
+				float: left;
+				padding: 0 0 1em 0;
+				margin: 0;
+				width: 100%;
+				a.download {
+					display: block;
+					float: left;
+					width: 172px;
+					height: 63px;
+					text-align: center;
+					text-decoration: none;
+					.advisiconFont(14);
+					line-height: 60px;
+					font-weight: 600;
+					letter-spacing: .0625em;
+					&:link {
+						color: rgba(254, 254, 254, .625);
+						background: transparent url(/pix/downloadButton.png) no-repeat 0 0;
+					}
+					&:visited {
+						color: @transparentRed * .5;
+						background: transparent url(/pix/downloadButton-visited.png) no-repeat 0 0;
+					}
+					&:hover {
+						color: rgba(254, 254, 254, .625);
+						background: transparent url(/pix/downloadButton-hover.png) no-repeat 0 0;
+					}
+					&:active {
+						color: @transparentRed;
+						background: transparent url(/pix/downloadButton-visited.png) no-repeat 0 0;
+					}
+				}
+			}
+			p {
+				margin: 0em .5em 1em 0;
+				a {
+					&:link {
+						color: #000000;
+						text-decoration: none;
+						border-bottom: 1px solid #000000;
+					}
+					&:visited {
+						color: #888888;
+						text-decoration: none;
+						border-bottom: 1px solid #888888;
+					}
+					&:hover {
+						color: @red;
+						text-decoration: none;
+						border-bottom: 1px solid @red;
+					}
+					&:active {
+						color: #ffffff;
+						text-decoration: none;
+						background-color: @transparentRed;
+						border-bottom: none;
+					}
+				}
+			}
+			ul {
+				padding-left: 9px;
+				width: 508px;
+			}
+			abbr {
+				color: #000000;
+				border-bottom: 1px dotted #000000;
+				&:hover {
+					color: @red;
+					border-bottom: 1px dotted @red;
+				}
+			}
+		}
+	}
+	#footer{
+		width: 950px;
+		.centerPlacement;
+		vertical-align: middle;
+		background: #ffffff url("../../pix/navAndCredBorder.png") repeat-y 9px 0px;
+		border-left: thin solid rgb(204, 204, 204);
+		border-right: thin solid rgb(204, 204, 204);
+		table {
+			&.navbartemp {
+				background-color:#000000; 
+				width: 100%;
+				height:2em;
+				margin:auto;
+				border-collapse:collapse;
+				color:#000000;
+			}
+		}
+	}
+	#nav{ /* for the footer navigation */
+		margin: 0px;
+		background-position: center;
+		vertical-align:middle;
+		width: 950px;
+		.centerPlacement;
+		-moz-border-radius: 0 0 10px 10px;
+		border-radius: 0 0 10px 10px;
+		overflow: hidden;
+		margin-bottom: 1em;
+		ul {
+			float: left;
+			background-color: #ffffff; 
+			&.navbarmini /*This is the actual navigation part [Jeff]*/ {
+				width: 950px;
+				height: 30px;
+				vertical-align: middle;
+				text-align: center;
+				font-family:'Calibri', Arial, sans-serif;   
+				border-collapse: collapse;
+				font-size:medium;
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-left:auto;
+				margin-right:auto;
+				list-style: none;
+				float: left;
+				li {
+					float: left;
+					display: block;
+					width: 311.666666px;
+					padding-left: 5px;
+					padding-right: 0;
+					a {
+						display: block;
+						font-size: small;
+						text-decoration: none;
+						padding-top: 2px;
+						padding-bottom: 2px;
+						text-align: center;
+						&:link { 
+							color: #666666;
+						} 
+						&:visited { 
+							color: #666666;
+						} 
+						&:hover { 
+							color: @red;
+						} 
+						&:active{ 
+							color: @gold * .75;
+						}
+						&.tel {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Style for tables of thumbnail images */
+table.main{ // not in index.htm
+   width: 950px;   
+   vertical-align: middle;
+   text-align: left;
+   border-color:#CCCCCC;
+   border-style:solid;  
+   border-width:thin;
+   border-collapse: collapse;   
+   
+}
+
+table.sidebarleft{ // not in index.htm
+	width: 150px;
+	vertical-align: middle;
+	text-align: left;
+	border-left: none;
+	border-right: thin;
+	border-top: none;
+	border-bottom: none;
+	border-style:solid;
+	border-color: #CCCCCC;	
+}
+
+table.sidebarright{ // not in index.htm
+	width: 530px;
+	vertical-align: middle;
+	padding-left: 5px;
+	text-align: left;
+	border: none;	
+	
+}
+
+a.special:link { 
+color: #ffffff; /*White depricated? [Jeff]*/
+text-decoration: none; 
+} 
+a.special:visited { 
+color: #ffffff; /*White, so there is no indication where you've been. We should probably change this to improve usability. Depricated? [Jeff]*/
+text-decoration: none; 
+} 
+a.special:hover { 
+color:#ffcc33; /*Gold depricated?[Jeff]*/
+text-decoration: none;
+}
+a.special:active{ 
+color: #cccccc; /*Grey depricated?[Jeff]*/
+text-decoration: none; 
+} 
+
+a.specialside:link { 
+color: #800000; 
+text-decoration: none; 
+} 
+a.specialside:visited { 
+color: #800000; 
+text-decoration: none; 
+} 
+a.specialside:hover { 
+color:#FFFFFF;
+background-color:#666666;
+border-width: thin;
+border-color: #666666; 
+text-decoration: none;
+} 
+a.specialside:active{ 
+color: #800000; 
+text-decoration: none; 
+} 
+
+a.specialhome:link { 
+color:#000000;
+font-size: large; 
+text-decoration: none;
+} 
+a.specialhome:visited { 
+color: #000000; 
+font-size: large;
+text-decoration: none; 
+} 
+a.specialhome:hover { 
+color:#800000;
+font-size: large;
+text-decoration: none; 
+} 
+a.specialhome:active{ 
+color: #cccccc; 
+font-size: large;
+text-decoration: none; 
+} 
+
+hr	{background-color:#800000;
+	color:#800000;
+	width: 90%;
+	}
+	
+ul {
+	list-style-position:outside;
+	margin-left:17px;
+	padding:0px;
+}	
+	
+ul.inset {
+padding-left:17px;
+}	

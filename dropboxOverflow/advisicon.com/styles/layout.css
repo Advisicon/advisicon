@@ -1,0 +1,38 @@
+﻿/* The container element encapsulates all other elements on the page (globalNav, contentL, contentC, and foot) */
+#container
+{
+	width:950px;
+	margin:10px auto;
+	padding:0px;
+	background-color:#FFFFFF;
+	overflow:hidden;
+	border:thin gray solid;
+	font-size:medium;
+}
+
+/* toppage contains the banner and external and internal links and buttons that are in the top part of the page */
+#toppage
+{
+	width: 100%;
+ 	vertical-align:top;
+ 	margin: -1.4em 0em 0em 0em;
+ 	padding: 0px;								
+}
+
+#centerpage
+{
+	width: 100%;
+	vertical-align:top;
+	margin:0px;
+	padding:0px;				
+}
+
+
+
+#bottompage
+{
+	width: 100%;
+ 	vertical-align: middle;
+ 	margin: 0px;
+ 	padding: 0px;
+}

@@ -1,0 +1,9 @@
+﻿/* CSS Document */
+
+/* This document is for dealing with IE's poor standards compliance.
+      
+   Created by Jeff Jacobson-Swartfager
+*/
+a img {
+				border: none;
+}

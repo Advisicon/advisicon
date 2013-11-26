@@ -1,0 +1,39 @@
+﻿/* CSS Document */
+
+/* This document is for reparing the terrible semantics of the current website. 
+   Use this style sheet to override poor semantics, this isn't a total improvement 
+   since it requires class or id selectors for now, but it can help to clean 
+   things up in the initial stage.
+   
+   The Naming convention used is 
+   [propper semantic tag name][. or # dependant upon uniqueness]repair
+   
+   End goal of this document is aid in the removal of page unique and inline CSS
+   
+   Created by Jeff Jacobson-Swartfager
+*/
+
+/* Headings */
+
+	h1.repair {
+		margin-right:.3em; 
+		width: 513px; 
+		font-family: 'Calibri', Arial, San-Serif; 
+		font-size: 18pt; 
+		color: #800000;
+	   }
+	
+	h2.repair {
+		font-size: 16pt;
+		color: #444444;
+	   }
+	h3.repair {
+		color: #444444;
+		font-family: 'Calibri', Arial, San-Serif;
+		border-collapse: collapse;
+		text-align: left;
+		font-size: 14pt;
+	   }
+	h4.repair {
+		font-size: 12pt;
+	   }

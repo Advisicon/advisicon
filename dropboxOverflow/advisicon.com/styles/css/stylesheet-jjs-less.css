@@ -1,0 +1,614 @@
+/* CSS Document */
+/* ===================== BEGIN less includes/mixin awesomeness */
+.centerPlacement {
+  /* causes elements to be centered */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ===================== END less includes/mixin awesomeness */
+/* Page header style */
+#header {
+  width: 100%;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+}
+/* Page footer style *//*
+#footer{
+     width: 100%;
+	 vertical-align: middle;
+	 margin: 0px;
+	 padding: 0px;
+} */
+/* Body text and page background */
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: 'Calibri', Arial, San-Serif;
+  font-size: small;
+  color: #444;
+  background: fixed;
+  background-image: url(../../pix/bkgrdgrayfade.gif);
+  background-repeat: repeat-x;
+}
+body #content {
+  width: 950px;
+  /* causes elements to be centered */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #content #advisiconBanner {
+  float: left;
+}
+body #content .navbar {
+  background-color: #000000;
+  margin-top: 0;
+  float: left;
+}
+body #content .navbar nav#mainNavigation {
+  padding: 2px 0;
+  margin: 0;
+  width: 100%;
+  float: left;
+}
+body #content .navbar nav#mainNavigation a {
+  width: auto;
+  float: left;
+  color: #333333;
+  text-align: left;
+  overflow: hidden;
+  margin: 0;
+  padding: 0px 5px;
+  display: block;
+  list-style: none;
+  font-size: small;
+  padding-right: 2em;
+  display: block;
+}
+body #content .navbar nav#mainNavigation a img {
+  border: 0;
+  display: block;
+}
+body #content .navbar nav#mainNavigation a.tel {
+  padding-right: 10px;
+  float: right;
+}
+body #content .navbar nav#mainNavigation a:link {
+  color: #ffffff;
+  /*White [Jeff]*/
+
+  text-decoration: none;
+}
+body #content .navbar nav#mainNavigation a:visited {
+  color: #ffffff;
+  /*White, so there is no indication where you've been. We should probably change this to improve usability. [Jeff]*/
+
+  text-decoration: none;
+}
+body #content .navbar nav#mainNavigation a:hover {
+  color: #ffcc33;
+  text-decoration: none;
+}
+body #content .navbar nav#mainNavigation a:active {
+  color: #cccccc;
+  /*Grey [Jeff]*/
+
+  text-decoration: none;
+}
+body #content .navbar nav#highlightsNavigation {
+  float: left;
+}
+body #content .navbar nav#highlightsNavigation a {
+  width: 185px;
+  height: 34px;
+  display: block;
+  float: left;
+  color: rgba(254, 254, 254, 0.9);
+  text-decoration: none;
+  /* sets font size, leading, and family */
+
+  font-family: 'Calibri', Arial, San-Serif;
+  font-size: 11pt;
+  line-height: 1.125;
+  line-height: 32px;
+  text-align: center;
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+body #content .navbar nav#highlightsNavigation a:link {
+  background: #000000 url(/pix/highlightsNavigation-link.jpg) no-repeat 0 0;
+}
+body #content .navbar nav#highlightsNavigation a:visited {
+  background: #000000 url(/pix/highlightsNavigation-link.jpg) no-repeat 0 0;
+}
+body #content .navbar nav#highlightsNavigation a:hover {
+  background: #000000 url(/pix/highlightsNavigation-hover.jpg) no-repeat 0 0;
+}
+body #content .navbar nav#highlightsNavigation a:active {
+  background: #000000 url(/pix/highlightsNavigation-hover.jpg) no-repeat 0 0;
+}
+body #content .navbar #accordianAds {
+  padding: 5px 0 0;
+  margin: 0;
+  height: 271px;
+  float: left;
+}
+body #content .navbar #accordianAds .accordion1 {
+  margin: 0;
+  padding-bottom: 0;
+  float: left;
+}
+body #content .navbar #accordianAds .accordion1 li {
+  padding-left: 5px;
+  list-style: none;
+}
+body #content #navAndCred {
+  float: left;
+  width: 146px;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-top: 20px;
+}
+body #content #navAndCred nav#secondaryNav {
+  margin-left: 0;
+  float: left;
+  width: 146px;
+}
+body #content #navAndCred nav#secondaryNav a {
+  height: auto;
+  float: left;
+  display: block;
+}
+body #content #navAndCred nav#secondaryNav a.secondaryNavButton {
+  height: 27px;
+  width: 143px;
+  background: #ffffff url(/pix/secondary-nav-button.png) no-repeat 0 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 27px;
+  margin-bottom: 3px;
+}
+body #content #navAndCred nav#secondaryNav a.secondaryNavButton:link {
+  background: #ffffff url(/pix/secondary-nav-button.png) no-repeat 0 0;
+}
+body #content #navAndCred nav#secondaryNav a.secondaryNavButton:hover {
+  background-image: url(http://advisicon.com/pix/secondary-nav-button-hover.png);
+  color: #860c0c;
+}
+body #content #navAndCred nav#secondaryNav a.secondaryNavButton:active {
+  background-image: url(http://advisicon.com/pix/secondary-nav-button-hover.png);
+  color: #860c0c;
+}
+body #content #navAndCred ul#credentials {
+  float: left;
+  margin-left: 0;
+  list-style: none;
+}
+body #content #navAndCred ul#credentials li {
+  height: auto;
+}
+body #content aside {
+  background-color: #ffffff;
+}
+body #content aside#secondaryContent {
+  width: 228px;
+  padding-top: 20px;
+  float: right;
+}
+body #content aside#secondaryContent div.rPopBox {
+  margin: 0em 3px 1em 0em;
+  border: 1px solid #860c0c;
+  height: 100%;
+  width: 220px;
+  float: right;
+  /* creates rounded corners in firefox and chrome, I'll add IE support later */
+
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+body #content aside#secondaryContent div.rPopBox h3 {
+  font-size: medium;
+  margin: .3em 5px .5em;
+  color: maroon;
+  width: 200px;
+}
+body #content aside#secondaryContent div.rPopBox ul {
+  padding-bottom: 2.5em;
+  font-size: 14px;
+  list-style-type: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+body #content aside#secondaryContent div.rPopBox ul.otherCommsList {
+  clear: right;
+  list-style-type: none;
+  margin: 0em 5px .7em 5px;
+  padding: 0;
+}
+body #content aside#secondaryContent div.rPopBox ul.otherCommsList li {
+  height: 42px;
+  width: 45px;
+  display: inline;
+  margin: 0em 0em 1em 0em;
+  overflow: visible;
+}
+body #content aside#secondaryContent div.rPopBox ul li {
+  font-weight: bolder;
+  float: left;
+  height: auto;
+  padding-bottom: 1em;
+  width: 200px;
+}
+body #content aside#secondaryContent div.rPopBox ul a {
+  text-decoration: none;
+}
+body #content aside#secondaryContent div.rPopBox ul a:hover {
+  border-bottom: 1px solid #860c0c;
+}
+body #content aside#secondaryContent div.rPopBox ul a:active {
+  border-bottom: 1px solid #860c0c;
+}
+body #content aside#secondaryContent div.rPopBox ul p {
+  margin-right: .2em;
+  margin-left: .2em;
+  font-size: 14px;
+}
+body #content aside#secondaryContent div.rPopBox p {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+body #content aside#secondaryContent div.rPopBox #tweets {
+  float: left;
+  padding-top: 1em;
+  padding-bottom: .5em;
+  overflow: hidden;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet {
+  float: left;
+  padding-bottom: 1em;
+  font-size: 14px;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet a {
+  float: left;
+  margin-left: 5px;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet a:hover {
+  border-bottom: 1px solid #860c0c;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet a:hover.twitterProfilePic {
+  border-bottom: none;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet a:active {
+  border-bottom: 1px solid #860c0c;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet a:active.twitterProfilePic {
+  border-bottom: none;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet a img {
+  opacity: .90;
+  width: 48px;
+  height: 48px;
+  /* creates rounded corners in firefox and chrome, I'll add IE support later */
+
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet a img:hover {
+  opacity: 1;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet .content {
+  float: left;
+  width: 152px;
+  margin-left: 5px;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet .content a {
+  margin: 0;
+  float: none;
+  font-weight: bolder;
+  text-decoration: none;
+  overflow: hidden;
+}
+body #content aside#secondaryContent div.rPopBox #tweets .tweet .content a:hover {
+  color: #860c0c;
+}
+body #content aside#secondaryContent div.rPopBox #portfolio {
+  padding: 0;
+  margin: 0;
+  height: 220px;
+}
+body #content aside#secondaryContent div.rPopBox #portfolio li {
+  height: 220px;
+}
+body #content aside#secondaryContent div.rPopBox #portfolio li a img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 0;
+}
+body #content #main {
+  width: 517px;
+  float: left;
+  vertical-align: top;
+  font-size: medium;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-left: 14px;
+  margin-left: .3em;
+}
+body #content #main h1 {
+  /* sets font size, leading, and family */
+
+  font-family: 'Calibri', Arial, San-Serif;
+  font-size: 18pt;
+  line-height: 1.125;
+  color: #860c0c;
+}
+body #content #main h2 {
+  /* sets font size, leading, and family */
+
+  font-family: 'Calibri', Arial, San-Serif;
+  font-size: 16pt;
+  line-height: 1.125;
+  color: #860c0c;
+  padding-top: 1em;
+}
+body #content #main .downloadables {
+  float: left;
+  padding: 0 0 1em 0;
+  margin: 0;
+  width: 100%;
+}
+body #content #main .downloadables a.download {
+  display: block;
+  float: left;
+  width: 172px;
+  height: 63px;
+  text-align: center;
+  text-decoration: none;
+  /* sets font size, leading, and family */
+
+  font-family: 'Calibri', Arial, San-Serif;
+  font-size: 14pt;
+  line-height: 1.125;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: .0625em;
+}
+body #content #main .downloadables a.download:link {
+  color: rgba(254, 254, 254, 0.625);
+  background: transparent url(/pix/downloadButton.png) no-repeat 0 0;
+}
+body #content #main .downloadables a.download:visited {
+  color: #430606;
+  background: transparent url(/pix/downloadButton-visited.png) no-repeat 0 0;
+}
+body #content #main .downloadables a.download:hover {
+  color: rgba(254, 254, 254, 0.625);
+  background: transparent url(/pix/downloadButton-hover.png) no-repeat 0 0;
+}
+body #content #main .downloadables a.download:active {
+  color: rgba(134, 12, 12, 0.75);
+  background: transparent url(/pix/downloadButton-visited.png) no-repeat 0 0;
+}
+body #content #main p {
+  margin: 0em .5em 1em 0;
+}
+body #content #main p a:link {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+body #content #main p a:visited {
+  color: #888888;
+  text-decoration: none;
+  border-bottom: 1px solid #888888;
+}
+body #content #main p a:hover {
+  color: #860c0c;
+  text-decoration: none;
+  border-bottom: 1px solid #860c0c;
+}
+body #content #main p a:active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgba(134, 12, 12, 0.75);
+  border-bottom: none;
+}
+body #content #main ul {
+  padding-left: 9px;
+  width: 508px;
+}
+body #footer {
+  width: 950px;
+  /* causes elements to be centered */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  background: #ffffff url("../../pix/navAndCredBorder.png") repeat-y 9px 0px;
+  border-left: thin solid #cccccc;
+  border-right: thin solid #cccccc;
+}
+body #footer table.navbartemp {
+  background-color: #000000;
+  width: 100%;
+  height: 2em;
+  margin: auto;
+  border-collapse: collapse;
+  color: #000000;
+}
+body #nav {
+  /* for the footer navigation */
+
+  margin: 0px;
+  background-position: center;
+  vertical-align: middle;
+  width: 950px;
+  /* causes elements to be centered */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+body #nav ul {
+  float: left;
+  background-color: #ffffff;
+}
+body #nav ul.navbarmini {
+  width: 950px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Calibri', Arial, sans-serif;
+  border-collapse: collapse;
+  font-size: medium;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  float: left;
+}
+body #nav ul.navbarmini li {
+  float: left;
+  display: block;
+  width: 311.666666px;
+  padding-left: 5px;
+  padding-right: 0;
+}
+body #nav ul.navbarmini li a {
+  display: block;
+  font-size: small;
+  text-decoration: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+body #nav ul.navbarmini li a:link {
+  color: #666666;
+}
+body #nav ul.navbarmini li a:visited {
+  color: #666666;
+}
+body #nav ul.navbarmini li a:hover {
+  color: #860c0c;
+}
+body #nav ul.navbarmini li a:active {
+  color: #bf9926;
+}
+/* Style for tables of thumbnail images */
+table.main {
+  width: 950px;
+  vertical-align: middle;
+  text-align: left;
+  border-color: #CCCCCC;
+  border-style: solid;
+  border-width: thin;
+  border-collapse: collapse;
+}
+table.sidebarleft {
+  width: 150px;
+  vertical-align: middle;
+  text-align: left;
+  border-left: none;
+  border-right: thin;
+  border-top: none;
+  border-bottom: none;
+  border-style: solid;
+  border-color: #CCCCCC;
+}
+table.sidebarright {
+  width: 530px;
+  vertical-align: middle;
+  padding-left: 5px;
+  text-align: left;
+  border: none;
+}
+a.special:link {
+  color: #ffffff;
+  /*White depricated? [Jeff]*/
+
+  text-decoration: none;
+}
+a.special:visited {
+  color: #ffffff;
+  /*White, so there is no indication where you've been. We should probably change this to improve usability. Depricated? [Jeff]*/
+
+  text-decoration: none;
+}
+a.special:hover {
+  color: #ffcc33;
+  /*Gold depricated?[Jeff]*/
+
+  text-decoration: none;
+}
+a.special:active {
+  color: #cccccc;
+  /*Grey depricated?[Jeff]*/
+
+  text-decoration: none;
+}
+a.specialside:link {
+  color: #800000;
+  text-decoration: none;
+}
+a.specialside:visited {
+  color: #800000;
+  text-decoration: none;
+}
+a.specialside:hover {
+  color: #FFFFFF;
+  background-color: #666666;
+  border-width: thin;
+  border-color: #666666;
+  text-decoration: none;
+}
+a.specialside:active {
+  color: #800000;
+  text-decoration: none;
+}
+a.specialhome:link {
+  color: #000000;
+  font-size: large;
+  text-decoration: none;
+}
+a.specialhome:visited {
+  color: #000000;
+  font-size: large;
+  text-decoration: none;
+}
+a.specialhome:hover {
+  color: #800000;
+  font-size: large;
+  text-decoration: none;
+}
+a.specialhome:active {
+  color: #cccccc;
+  font-size: large;
+  text-decoration: none;
+}
+hr {
+  background-color: #800000;
+  color: #800000;
+  width: 90%;
+}
+ul {
+  list-style-position: outside;
+  margin-left: 17px;
+  padding: 0px;
+}
+ul.inset {
+  padding-left: 17px;
+}
