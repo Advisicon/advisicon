@@ -1,7 +1,7 @@
-Porfolio 21
-===========
+Portfolio 21
+============
 
-This folder is for **Portfolio 21** related SharePoint branding.
+This folder is for [Portfolio 21][1] related SharePoint branding.
 
 
 Document Guide
@@ -20,3 +20,5 @@ We use this file to build the SharePoint template structure.
 
 `changecase-style.css` is the CSS file specifically used by `vancouver.html` 
 to overwrite some of the out-of-the-box SharePoint styles.
+
+[1]: http://portfolio21.com "Portfolio 21's website"
