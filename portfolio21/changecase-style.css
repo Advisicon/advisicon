@@ -1,0 +1,84 @@
+/*
+Author
+======
+
+This stylesheet was written by Jeff Jacobson-Swartfager for Advisicon.
+View more of Jeff's work at http://changecase.net
+
+
+*/
+
+
+#s4-titlerow {
+  display: block;
+  float: left;
+  width: 1417px;
+  margin-bottom: 40px;
+}
+#s4-titlerow .ms-breadcrumb-box {
+  display: block;
+  float: left;
+  width: 877px;
+}
+#s4-titlerow #advisicon-search-wrapper {
+  display: block;
+  float: left;
+}
+#contentRow {
+  clear: left;
+}
+#sideNavBox {
+  margin-right: -200px;
+}
+#contentBox {
+  float: left;
+  margin-right: 400px;
+}
+#fancyPants-wrapper {
+  width: 360px;
+  overflow: hidden;
+  float: right;
+  margin-left: -400px;
+  margin-right: 20px;
+}
+#fancyPants {}
+
+@media only screen and (max-width: 1679px) {
+  #contentBox {
+    max-width: 1040px;
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 1550px) {
+  #contentRow {
+    /*float: left;
+	min-height:100%;
+	min-width: 100%;*/
+  }
+  #contentBox {
+    float: none;
+	/*min-height: 100%;
+	margin-right: 40px;*/
+  }
+  #fancyPants-wrapper {
+    display: none;
+	/*width:20px;
+	height: 100%;*/
+  }
+  #fancyPants {
+    /*height: 100%;
+	width: auto\9;
+	opacity: 0.2;
+	filter: alpha(opacity=5);*/
+  }
+}
+
+/* mid size screen and smaller */
+@media only screen and (max-width: 1919px) {
+  img#MSOImageWebPart_WebPartWPQ2 {
+    width: 800px;
+    border: 3px solid #000000;
+  }
+}
+
