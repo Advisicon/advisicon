@@ -41,7 +41,9 @@ View more of Jeff's work at http://changecase.net
   margin-left: -400px;
   margin-right: 20px;
 }
-#fancyPants {}
+#suiteLinksBox {
+  display: none;
+}
 
 @media only screen and (max-width: 1679px) {
   #contentBox {
