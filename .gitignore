@@ -10,6 +10,6 @@ webdev/
 ruby/corundum-hoard/.git
 ~*.idlk
 adv-jekyll/
-books/
+books/*
 books/advisicon-books/
 books/advisicon-books/MPwMP2013/
