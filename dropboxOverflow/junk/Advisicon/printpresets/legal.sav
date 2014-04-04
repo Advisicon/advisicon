@@ -1,0 +1,109 @@
+EFISavedSettingsBegin
+WinNT
+Brochure
+*EF_COPIES 1
+*EF_LAYOUT 1
+*EF_PAPER_ORIENTATION Portrait
+*EFStapler False
+*EFGlossAdjust False
+*EFDuplex TopTop
+*EFMediaType Plain
+*InputSlot Tray2
+*PageSize Tabloid
+*EF_COPIES 1
+*UserAuthDlg 0
+*Notes1 
+*Notes2 
+*Instruct 
+*Resume 
+*EFRaster False
+*EFMMInUse False
+*EFMMInsType None
+*EFMMCover PrintFront
+*EFMMTabShift False
+*EFMediaType Plain
+*InputSlot Tray2
+*EFTrayAlignment False
+*EFSlipsheet False
+*EFSlipsheetSize Letter
+*EFSlipsheetTray Tray5
+*EFMediaInterlv False
+*EFInterlvTray Tray5
+*EFMedQualCoatd1 EFMedQualCoatd1DEF
+*EFMedQualCust1 EFMediaQualityCustom1DEF
+*EFMedQualCust2 EFMedQualCust2DEF
+*EFMedQualCust3 EFMedQualCust3DEF
+*EFMedQualCust4 EFMedQualCust4DEF
+*EFMedQualCust5 EFMedQualCust5DEF
+*EFMedQualHeavy1 EFMedQualHeavy1DEF
+*EFMedQualHeavy2 EFMedQualHeavy2DEF
+*EFMedQualPlain EFMedQualPlainDEF
+*EFMedQualRcycld EFMedQualRcycldDEF
+*EFPrintSize EFPrintSizeDEF
+*PageSize Tabloid
+*EFScale 100
+*EF_PAPER_ORIENTATION Portrait
+*EF_MIRROR 1
+*EF_LAYOUT 1
+*EFDuplex TopTop
+*EFUserRotate180 False
+*EFRIPBooklet False
+*EFBookCoverTray EFBookCoverTrayDEF
+*EFBookFrCover None
+*EFBookBkCover None
+*EFCopierBooklet False
+*EFCentering Middle
+*EFBookletCreep False
+*EFBookletReduce True
+*EFManualDuplex False
+*EFColorMode CMYK
+*EFRGBOverride EFRGBOverrideDEF
+*EFRGBOtherWtPt EFRGBOtherWtPtDEF
+*EFRGBOtherGamma EFRGBOtherGammaDEF
+*EFRGBOtherPhos EFRGBOtherPhosDEF
+*EFColorRendDict PRESENTATION
+*EFRGBSep EFRGBSepDEF
+*EFSimulation EFSimulationDEF
+*EFSimSpeed EFSimSpeedDEF
+*EFOutProfile EFOutProfileDEF
+*EFSpotColors EFSpotColorsDEF
+*EFPureBlack EFPureBlackDEF
+*EFBlkOvpCtrl EFBlkOvpCtrlDEF
+*EFCompOverprint False
+*EFKOnlyGrayCMYK EFKOnlyGrayCMYKDEF
+*EFKOnlyGrayRGB EFKOnlyGrayRGBDEF
+*EFSubstColors False
+*EFSeparations False
+*EFTrapping False
+*EFImageSmooth False
+*EFBrightness 00.00
+*EFImageEnhance EFImageEnhanceDEF
+*EFCompression BestQuality
+*EFCopierMode EFCopierModeDEF
+*EFGlossAdjust False
+*EFTextGfxQual Best
+*EFImageBackX 0
+*EFImageBackY 0
+*EFImageFrontX 0
+*EFImageFrontY 0
+*EFSort Collate
+*EFStapler False
+*EFOutputBin AutoSelect
+*EFImageAlign False
+*EFImageUnit Inches
+*EFFold False
+*EFImageFlag False
+*EFOffsetJobs EFOffsetJobsDEF
+*EFPunchEdge None
+*EFPunchHoleType None
+*EFFaceDown EFFaceDownDEF
+*EFCreateMaster None
+*EFUseMaster None
+*EFPPTSlide False
+*EFPrintMaster EFPrintMasterDEF
+*EF_WATERMARK 0
+*EF_WATERMARK_FIRSTPAGEONLY 0
+EFIMixedMediaBegin
+
+EFIMixedMediaEnd
+EFISavedSettingsEnd
