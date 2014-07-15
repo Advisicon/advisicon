@@ -1,0 +1,38 @@
+{
+  "Project1": {
+    "Title": "Project 1",
+    "Issues": {
+      "NeedAttention": 1,
+      "Managing": 5,
+      "Closed": 2
+    },
+    "Risks": {
+      "NeedAttention": 1,
+      "Managing": 5,
+      "Closed": 2
+    },
+    "ChangeControl": {
+      "NeedAttention": 1,
+      "Managing": 5,
+      "Closed": 2
+    }
+  },
+  "Project2": {
+    "Title": "Project 2",
+    "Issues": {
+      "NeedAttention": 0,
+      "Managing": 3,
+      "Closed": 1
+    },
+    "Risks": {
+      "NeedAttention": 0,
+      "Managing": 3,
+      "Closed": 1
+    },
+    "ChangeControl": {
+      "NeedAttention": 0,
+      "Managing": 3,
+      "Closed": 1
+    }
+  }
+}

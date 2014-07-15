@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JSON loading example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <% require 'json' %>
+    <% file = File.read('project-example.json') %>
+    <% example = JSON.parse(file) %>
+    <% example.each do |item, project| %>
+      <% @project = project %>
+      <table>
+        <caption>Issues</caption>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Needs Attention</th>
+            <th>Managing</th>
+            <th>Closed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @project['Title'] %></td>
+            <% if project['Issues']['NeedAttention'] %>
+              <td class="attention">
+            <% else %>
+              <td>
+            <% end %>
+            <%= project['Issues']['NeedAttention'] %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "Issues": {
+    "Project 1": {
+      "NeedsAttention": 1,
+      "Managing": 5,
+      "Closed": 2
+    },
+    "Project 2": {
+      "NeedsAttention": 3,
+      "Managing": 3,
+      "Closed": 2
+    }
+  },
+  "Risks": {
+    "Project 1": {
+      "NeedsAttention": 1,
+      "Managing": 5,
+      "Closed": 2
+    },
+    "Project 2": {
+      "NeedsAttention": 3,
+      "Managing": 3,
+      "Closed": 2
+    }
+  }
+}
