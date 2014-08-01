@@ -112,3 +112,8 @@ distributed to registered users.
 Instead, in order to _actually_ get access to newsletter updates, interested 
 parties need to contact Sharon or an administrator directly and request to be
 added to the list.
+
+# State Desire for a Stable Platform
+
+For Amy, this means that the website shouldn't go down due to content updates 
+and the site should be viewable and editable from multiple browsers.
