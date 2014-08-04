@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?aid style="50" type="snippet" readerVersion="6.0" featureSet="513" product="8.0(370)" ?>
+<?aid SnippetType="InCopyInterchange"?>
+<Document DOMVersion="8.0" Self="pandoc_doc">
+    <RootCharacterStyleGroup Self="pandoc_character_styles">
+      <CharacterStyle Self="$ID/NormalCharacterStyle" Name="Default" />
+      <CharacterStyle Self="CharacterStyle/Bold" Name="Bold" FontStyle="Bold">
+        <Properties>
+          <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+        </Properties>
+      </CharacterStyle>
+      <CharacterStyle Self="CharacterStyle/Code" Name="Code">
+        <Properties>
+          <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+          <AppliedFont type="string">Courier New</AppliedFont>
+        </Properties>
+      </CharacterStyle>
+      <CharacterStyle Self="CharacterStyle/Link" Name="Link">
+        <Properties>
+          <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+        </Properties>
+      </CharacterStyle> 
+    </RootCharacterStyleGroup>
+    <RootParagraphStyleGroup Self="pandoc_paragraph_styles">
+      <ParagraphStyle Self="$ID/NormalParagraphStyle" Name="$ID/NormalParagraphStyle"
+          SpaceBefore="6" SpaceAfter="6"> <!-- paragraph spacing -->
+        <Properties>
+          <TabList type="list">
+            <ListItem type="record">
+              <Alignment type="enumeration">LeftAlign</Alignment>
+              <AlignmentCharacter type="string">.</AlignmentCharacter>
+              <Leader type="string"></Leader>
+              <Position type="unit">10</Position> <!-- first tab stop -->
+            </ListItem>
+          </TabList>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/" Name="" LeftIndent="0">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/Blockquote &gt; Paragraph" Name="Blockquote &gt; Paragraph" LeftIndent="10">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/BulList" Name="BulList" BulletsAndNumberingListType="BulletList" LeftIndent="0">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+          <TabList type="list">
+            <ListItem type="record">
+              <Alignment type="enumeration">LeftAlign</Alignment>
+              <AlignmentCharacter type="string">.</AlignmentCharacter>
+              <Leader type="string" />
+              <Position type="unit">10</Position>
+            </ListItem>
+          </TabList>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/BulList &gt; first" Name="BulList &gt; first" BulletsAndNumberingListType="BulletList" LeftIndent="0">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+          <TabList type="list">
+            <ListItem type="record">
+              <Alignment type="enumeration">LeftAlign</Alignment>
+              <AlignmentCharacter type="string">.</AlignmentCharacter>
+              <Leader type="string" />
+              <Position type="unit">10</Position>
+            </ListItem>
+          </TabList>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/Header1" Name="Header1" LeftIndent="0" PointSize="36">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/Header2" Name="Header2" LeftIndent="0" PointSize="30">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/Paragraph" Name="Paragraph" LeftIndent="0">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/Rawblock" Name="Rawblock" LeftIndent="0">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+        </Properties>
+      </ParagraphStyle> 
+    </RootParagraphStyleGroup>
+    <RootTableStyleGroup Self="pandoc_table_styles">
+      <TableStyle Self="TableStyle/Table" Name="Table" />
+    </RootTableStyleGroup>
+    <RootCellStyleGroup Self="pandoc_cell_styles">
+      <CellStyle Self="CellStyle/Cell" AppliedParagraphStyle="ParagraphStyle/$ID/[No paragraph style]" Name="Cell" />
+    </RootCellStyleGroup>
+  <Story Self="pandoc_story"
+      TrackChanges="false"
+      StoryTitle=""
+      AppliedTOCStyle="n"
+      AppliedNamedGrid="n" >
+    <StoryPreference OpticalMarginAlignment="true" OpticalMarginSize="12" />
+
+<!-- body needs to be non-indented, otherwise code blocks are indented too far -->
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Technology</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Sharon only accesses the front-end of nttg.biz. She uses Chrome for this.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>To make updates (archiving old charters, adding content, or reorganizing the information architecture), Sharon calls or emails Amy and instructs Amy to do it.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Navigating the Site</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>The site has been organized to suit Sharon's preferences. Usually, this means that Sharon has a sense of where she needs to go and which folders she needs to drill down through in order to get to the information she is seeking. However, she often finds herself hunting for information where it isn't actually located.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>To back out of dead ends and make another pass at finding the info she's looking for, Sharon</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>uses the breadcrumbs to step up a level or two,</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>returns to the top-level categories in the main menu,</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>drills through the folders in the </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Documents</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> section, or</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>uses the embedded site search.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Often, the information Sharon is looking for is nested several levels deep.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Currently, search only allows queries that are 20 characters long or less. This length is less than adequate for searching for a phrase like &quot;public policy requirements&quot; (a 25 character query).</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>They try and keep content accessible in three ways: drilling down through the main menu, nested folders in the </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Documents</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> section, and site search. The most recent items are also available though the quick links in the </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Recently Posted Items</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> section.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Archiving Documents</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Old documents are archived as Sharon requests them to be. There is not an established process for determining which documents are worthy of archiving.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>To archive, Sharon will contact Amy. They'll then talk about how they want to handle a specific archiving task together.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Content</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>The majority of the content on the website is downloadable PDFs. There is a small collection of downloadable DOCXs and XSLXs as well. It is important that the majority of the content is PDF so that it cannot be easily changed by end users and can be saved locally and printed out.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Downloading is important for maintaining open access.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>The DOCX files are used for forms to be filled out. Filled out forms are emailed to Sharon/Amy.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Stated Desire for a Stable Platform</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Sharon recognizes that the platform that nttg.biz is built on is very old. She's concerned that things may break due to its age:</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>We built this in 2007 when NTTG was formed and we've done no maintenance to it since then.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>How long can you use Joomla 1.0 when its up to whatever it is now? [...] If one day it goes away and goes BOOM, we really can't be down for the period of time it would take to build a new website.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>She also notes that in 2013 her hosting provider upgraded their servers, which temporarily brought nttg.biz down due to a compatibility issue.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Additionally, the site has been hacked. Sharon would like to limit the possibility of this happening again.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Since all additions to the website have been implemented through a website administrator, Sharon doesn't know enough about the backend to implement changes herself. As a result, the NTTG website has a very </Content>
+  </CharacterStyleRange>
+  <HyperlinkTextSource Self="htss-1" Name="A brief explanation of Bus Factor on Wikipedia" Hidden="false">
+    <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Link">
+      <Content>low bus factor</Content>
+    </CharacterStyleRange>
+  </HyperlinkTextSource>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>: if anything were to happen to the project coordinator (for example, she was hit by a bus), the timely updates to the website which are necessary for compliance with regulations would be put in serious risk.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>I've never seen the back-end of [the NTTG website], I've always relied on the project coordinator that I've hired through Advisicon to work through the background on this.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Website Analytics</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>For analytics, the only current example is the &quot;Hits&quot; marker on individual documents. It shows how many times people have accessed the document.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>It just gives me some sense -- particularly if we're putting something that's controversial out there -- I like to go monitor that [to see if it has attracted public attention].</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Budget</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>NTTG is estimating a budget up to about $20,000 for this project.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Regulation Compliance</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>To comply with the regulations that they're subject to, the NTTG website needs to:</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Keep its information open and accessible</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Post meeting notices at least 7 days in advance</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Contact information</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Open and Accessible Information</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>It is important to NTTG to keep their information open and accessible to all.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>NTTG recieves no funding from Federal assistance, so it does not need to comply with Section 508.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Open information is important for communicating with the funders, FERC audits, and the public. It allows NTTG to demonstrate that transmission providers are not providing preferential treatment to transmission providers' own merchant or anybody else. It allows everyone to have the same data at the same time.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Rawblock">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;aside&gt;</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>As a result of NTTG's desire for accessability, it may be worth reviewing recommendations through the lens of some US laws: the Rehabilitation Act of 1973 (sections 504 and 508), ADA, IDEA, and the Telecommunications Act of 1996 (section 255).</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>An overview from webaim can be found at [http://webaim.org/articles/laws/usa/].</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Rawblock">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>&lt;/aside&gt;
+    </Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Public Meetings and the Calendar</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>The calendar is for listing public meeting notices for the stakeholder meetings and the steering committee meetings. Notice of upcoming meetings must be posted at least 7 days in advance.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Contact</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>The public needs to have a way to contact NTTG. The contact method needs to be in line with all of their attachement K filings.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>Every transmission provider would have to do a new filing with FERC if we were to change this [contact method]</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>The current method allow a user to fill out a contact form on the website. Completing the contact form sends an email to </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+    <Content>admin@nttg.biz</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>.</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>They also need to be using </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+    <Content>info@nttg.biz</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>. This is the email address that is in all of their FERC filings. It is mentioned on all data submission forms, &quot;E-mail this form and all supporting documents to info@nttg.biz.&quot;</Content>
+  </CharacterStyleRange><Br />
+</ParagraphStyleRange>
+
+  </Story>
+  <HyperlinkURLDestination Self="HyperlinkURLDestination/http://en.wikipedia.org/wiki/Bus_factor" Name="link" DestinationURL="http://en.wikipedia.org/wiki/Bus_factor" DestinationUniqueKey="1" />
+  <Hyperlink Self="uf-1" Name="http://en.wikipedia.org/wiki/Bus_factor" Source="htss-1" Visible="true" DestinationUniqueKey="1">
+    <Properties>
+      <BorderColor type="enumeration">Black</BorderColor>
+      <Destination type="object">HyperlinkURLDestination/http://en.wikipedia.org/wiki/Bus_factor</Destination>
+    </Properties>
+  </Hyperlink>
+</Document>

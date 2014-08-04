@@ -45,7 +45,7 @@ and the text in the copied text.
 Amy uses IE 9 to make her edits because this site does not support modern browsers.
 
 When she attempts to make edits via a modern browser (like Chrome), popups that
-are neccessary for saving changes never load.
+are necessary for saving changes never load.
 
 This lack of modern browser support could result in the inability to update the 
 site in the future.
@@ -113,7 +113,7 @@ Instead, in order to _actually_ get access to newsletter updates, interested
 parties need to contact Sharon or an administrator directly and request to be
 added to the list.
 
-# State Desire for a Stable Platform
+# Stated Desire for a Stable Platform
 
 For Amy, this means that the website shouldn't go down due to content updates 
 and the site should be viewable and editable from multiple browsers.

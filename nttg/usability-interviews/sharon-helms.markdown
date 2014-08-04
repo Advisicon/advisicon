@@ -40,12 +40,6 @@ established process for determining which documents are worthy of archiving.
 To archive, Sharon will contact Amy. They'll then talk about how they want to
 handle a specific archiving task together.
 
-# Public Meetings and the Calendar
-
-The calendar is for listing public meeting notices for the stakeholder meetings 
-and the steering committee meetings. Notice of upcoming meetings must be posted
-at least 7 days in advance.
-
 # Content
 
 The majority of the content on the website is downloadable PDFs. There is a 
@@ -76,15 +70,80 @@ temporarily brought nttg.biz down due to a compatibility issue.
 Additionally, the site has been hacked. Sharon would like to limit the possibility
 of this happening again.
 
+Since all additions to the website have been implemented through a website 
+administrator, Sharon doesn't know enough about the backend to implement changes
+herself. As a result, the NTTG website has a very [low bus factor][1]: if 
+anything were to happen to the project coordinator (for example, she was hit by
+a bus), the timely updates to the website which are necessary for compliance 
+with regulations would be put in serious risk.
+
+> I've never seen the back-end of [the NTTG website], I've always relied on the
+> project coordinator that I've hired through Advisicon to work through the 
+> background on this.
+
 # Website Analytics
 
 For analytics, the only current example is the "Hits" marker on individual 
 documents. It shows how many times people have accessed the document.
 
-> It just gives me some sense - particularly if we're putting something that's
-> controversial out there - I like to go monitor that [to see if it has attracted
+> It just gives me some sense -- particularly if we're putting something that's
+> controversial out there -- I like to go monitor that [to see if it has attracted
 > public attention].
 
 # Budget
 
 NTTG is estimating a budget up to about $20,000 for this project.
+
+# Regulation Compliance
+
+To comply with the regulations that they're subject to, the NTTG website needs
+to:
+
+* Keep its information open and accessible
+* Post meeting notices at least 7 days in advance
+* Contact information
+
+## Open and Accessible Information
+
+It is important to NTTG to keep their information open and accessible to all.
+
+NTTG recieves no funding from Federal assistance, so it does not need to comply
+with Section 508.
+
+Open information is important for communicating with the funders, FERC audits,
+and the public. It allows NTTG to demonstrate that transmission providers are 
+not providing preferential treatment to transmission providers' own merchant 
+or anybody else. It allows everyone to have the same data at the same time.
+
+<aside>
+As a result of NTTG's desire for accessability, it may be worth reviewing 
+recommendations through the lens of some US laws: the Rehabilitation Act of 
+1973 (sections 504 and 508), ADA, IDEA, and the Telecommunications Act of 1996
+(section 255).
+
+An overview from webaim can be found at [http://webaim.org/articles/laws/usa/].
+</aside>
+
+## Public Meetings and the Calendar
+
+The calendar is for listing public meeting notices for the stakeholder meetings 
+and the steering committee meetings. Notice of upcoming meetings must be posted
+at least 7 days in advance.
+
+## Contact
+
+The public needs to have a way to contact NTTG. The contact method needs to be 
+in line with all of their attachement K filings.
+
+> Every transmission provider would have to do a new filing with FERC if we 
+> were to change this [contact method]
+
+The current method allow a user to fill out a contact form on the website. 
+Completing the contact form sends an email to `admin@nttg.biz`.
+
+They also need to be using `info@nttg.biz`. This is the email address that is 
+in all of their FERC filings. It is mentioned on all data submission forms, 
+"E-mail this form and all supporting documents to info@nttg.biz."
+
+
+[1]: http://en.wikipedia.org/wiki/Bus_factor "A brief explanation of Bus Factor on Wikipedia"
