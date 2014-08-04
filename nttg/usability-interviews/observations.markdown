@@ -644,18 +644,5 @@ cost of $184.68/year for hosting.
 Hosting is still through SiteGround. The Joomla platform running on the 
 SiteGround Apache servers is currently free of charge.
 
-# Document Biases
-
-The information we've gathered has been heavily reliant on the user studies 
-conducted with administrative users. To better understand the needs of other 
-user types, we suggest conducting additional user studies with private access 
-users (if such users exist) and public users.
-
-An important part of additional user studies will be finding and observing 
-private access users. Since this is a group that is largely ignored in current 
-administrative practices, learning about the needs and expectations of these 
-users is likely to result in a significant improvement in their experience with 
-the site.
-
 [1]: http://en.wikipedia.org/wiki/Bus_factor "A brief explanation of Bus Factor on Wikipedia"
 
