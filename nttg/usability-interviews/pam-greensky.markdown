@@ -1,4 +1,6 @@
-# User Observations
+---
+title: NTTG.BIZ OBSERVATIONS OF USER INTERACTIONS
+---
 
 This document describes the insights our team has learned about 
 [http://nttg.biz]() to date through usability interviews and observations of 
@@ -8,7 +10,7 @@ We have interviewed two website administrators, one NTTG executive, and one
 NTTG funder. We have also briefly researched the functional capabilities of a 
 user type not interviewed, the private access user. 
 
-## User Types
+# User Types
 
 There are three different types of users (plus some special cases) accessing 
 the website: administrative users, private access users, and public users. 
@@ -17,7 +19,7 @@ Public users have access to information that must be legally made available
 (meeting notes, contact information, and a list of upcoming meetings). Private 
 access users have access to all of the public content, plus private content. 
 
-### Administrative Users
+## Administrative Users
 
 There are very few regular administrative users of the website. These administrative 
 users are frustrated with the difficulties posed by a counter intuitive interface. 
@@ -41,30 +43,58 @@ collection of self-created, locally saved support documents. Each administrator
 may have a different set of documentation or documentation with differing 
 instructions.
 
-### Private Access Users
+## Private Access Users
 
-Note: we have not interviewed any private access users.
+Note: we have not interviewed any private access users. However, we have briefly
+researched the capabilities of this user type.
+
+Registering for the distribution list creates a new Private Access User account. 
+There are currently 18258 Private Access User accounts. However, all of the 
+administrative users we interviewed assume these accounts are spam.
 
 While private access users could feasibly access content that was not available 
 to the general public, no such content is currently being added to the site. 
 As a result, private access users have access to no more content than public 
 users.
 
-### Public Users
+According to the text on NTTG's website, the Private access users _should_ be 
+added to the distribution list and receiving updates as a result. However, this 
+is not currently happening.
 
-We have not interviewed any public users.
+Becoming a Private Access User does enable one feature not available to Public 
+Users: the ability to upload documents to nttg.biz.
+
+### How to Become a Private Access User
+
+Registration on the site allows visitors to nttg.biz to create their own user 
+account. All they have to do is confirm their account through an automated email
+notice.
+
+### How to Upload a Document as a Private Access User
+
+Once registered, users can upload files (via **Documents** > **Submit File**).
+
+## Public Users
 
 Public users only have access to content that is published for availability on 
 the website front end.
 
 ![Relative level of access for the identified user types.](img/user-types.png)
 
-### Notable Cross-Type Users
+Public Users can also be Administrative Users or Private Access Users, depending
+on whether they are logged in to nttg.biz or not. Funders, stakeholders, and 
+the general public will all typically access nttg.biz as a public user.
+
+These user types use nttg.biz to gain access to meetings (meetings they are 
+attending, as well as meetings that they are leading), to look for documents, 
+and to add content to the site.
+
+## Notable Cross-Type Users
 
 There are a few notable users that fall into two or more of the user type
 categories.
 
-#### Other NTTG Staff
+### Other NTTG Staff
 
 While some of the NTTG staff are administrative users, not all are. Despite 
 restricted access (at the user permissions level), the NTTG staff has significant
@@ -75,6 +105,33 @@ to the same influence that a Public Access User holds.
 To initiate updates, non-administrative users at NTTG communicate directly with 
 the administrative users (via phone calls or email) to direct the administrators
 through the changes step-by-step.
+
+# User Registration
+
+Registering for the distribution list creates a new user account. These users 
+are the **Private Access Users**. NTTG does not use any of these registrations 
+to distribute information, although the text on the website would indicate 
+otherwise:
+
+> Registering with nttg.biz will add the users to the NTTG distribution list,
+> giving them up-to-date information on public stakeholder meetings.
+
+Site administrators don't have a way to validate email addresses, don't curate 
+the list, or move any of the user data into a CRM service. No newsletters are
+distributed to registered users.
+
+Instead, in order to _actually_ get access to newsletter updates, interested 
+parties need to contact NTTG staff directly and request to be added to the list.
+
+## User Administration 
+
+Administrative users are the only people with recognized user accounts. All 
+other registered users are assumed to be spam. 
+
+There are currently 18258 registered users. These registered users fit our 
+definition of the **Private Access Users**, although none are currently seeing 
+any benefit from being a registered user (outside of an ability to upload files
+to nttg.biz).
 
 # Technology
 
@@ -104,9 +161,9 @@ graphical user interface in the future.
 
 # Content Types
 
-There are six different types of content currently being added to the website: 
+There are seven different types of content currently being added to the website: 
 images, text, Adobe Acrobat files, Microsoft Word files, Microsoft Excel files, 
-and datetime information.
+Microsoft PowerPoint files, and datetime information.
 
 The majority of the content on the website is downloadable PDFs. There is a 
 small collection of downloadable DOCXs and XSLXs as well. It is important that
@@ -134,11 +191,13 @@ This data is updated "maybe once every two years."
 
 ## Adobe Acrobat Files
 
-This is the most frequently updated content. These are meeting notes and 
-proposals. Before being made available to public users, the administrative users 
-must first receive sign-off from stakeholders. In some cases stakeholders may 
-have private access accounts, but these accounts do not grant them early access 
-to content.
+Adobe Acrobat files (files with the extention PDF) are the most frequently 
+updated content. These are meeting notes and proposals. Before being made 
+available to public users, the administrative users must first receive sign-off 
+from stakeholders. In some cases stakeholders may have private access accounts, 
+but these accounts do not grant them early access to content.
+
+### Uploading Acrobat Files
 
 Correctly uploading, storing, and including these files on the website is a 
 difficult, time consuming process. However, this is an important aspect of 
@@ -181,7 +240,8 @@ The current process for uploading meeting notes is as follows:
 
 The process for uploading proposals is very similar to the process of uploading 
 meeting notes, with one difference: there is no meeting at which to take notes, 
-the proposals come from stakeholders. 
+the proposals come from stakeholders. The stakeholders, funders, and committee 
+chairs must email the content to NTTG in order to get it up on the site. 
 
 It is unclear how much space these files (or the website for that matter) take 
 up. Some error codes indicate that it may take up more than 128mb. The total 
@@ -207,10 +267,22 @@ In other words, the admin is unable to nest content items within content items.
 Instead, the nesting has to be faked through redirects to items stored in the
 Recently Posted list.
 
-## Microsoft Word and Excel
+### Using Acrobat Files
+
+Funders and stakeholders will often download the agenda document associated with 
+meetings prior to the meeting. They'll use the agenda document to refer to 
+during the meeting, and access the meeting materials by following the 
+**Link to Meeting Materials** hyperlink in the agenda document.
+
+Sometimes, users will print out the agenda document (especially if they are 
+traveling at the time of the meeting).
+
+## Microsoft Word, Excel, and PowerPoint
 
 The Microsoft Word and Excel files are used by stakeholders as forms to be 
 filled out. Filled out forms are submitted by emailing them to NTTG.
+
+Microsoft PowerPoint files are used by stakeholders for meeting presentations.
 
 ## Datetime
 
@@ -332,6 +404,96 @@ We observed users attempting to access archived documents by going to
 **Documents** > **General** > **Archived Documents**, but users were unsuccessful
 in locating the information they were looking for.
 
+"What I'm looking for may not even be on here any more," a user said while trying 
+to locate a document for reference on a comittee's progress.
+
+> I suppose I could use the search engine, but I'd have to remember any sort of 
+> name of what the document is, but I don't... Let me think if I can remember
+> some of the names of the documents.
+
+After trying once to search for the document without success, the user gave up.
+
+## Finding a Meeting
+
+Users access meeting information through the calendar widget. We observed some 
+confusion with this widget: users expected weeks to be ordered Sunday, Monday,
+Tuesday, Wednesday, Thursday, Friday, Saturday. Instead, the weeks on the calendar
+begin with Monday and end with Sunday. There is no method for users to change 
+the week layout or to log in and set a preference.
+
+Often, users had trouble locating past meetings. Users attempted to find the 
+meeting by using the meeting categories, but that still returns a long list. 
+Users rarely scrolled when looking for past meetings. Locating information about
+past meetings was often unsuccessful. 
+
+### Receiving Notice about Upcoming Meetings
+
+Some public users receive notice about upcoming meetings. These public users 
+have an established relationship with NTTG and receive an email when there is
+a meeting coming up. To receive these emails (or to get a member of their team 
+added to the notification as well), public users must directly contact a NTTG
+staff member.
+
+This is a feature that is likely more appropriate for Private Access Users. 
+Currently, this information is not making its way into distribution lists that
+Private Access Users have been added to.
+
+## Finding Documents
+
+Users had varying levels of success at finding the documents they were looking 
+for. Documents that were located within very shallow nesting on the site were 
+the documents that were most easily found.
+
+> If I'm not coming in [to the NTTG website] relative to a meeting, I might be
+> in here looking for some sort of document. There's a couple different ways to
+> get at documents, but the first thing that strikes me is "Charters & Agreements."
+>
+> Often times during the Planning Committee meeting I may need to reference the 
+> Charter (which I do have stored on my computer, or printed out, or I could
+> come in here ... [and get] the most recent one. I know I can always get the 
+> most recent charter by going back to the Charters & Agreements.
+
+Deeply nested documents were more difficult for users to find. The following 
+example demonstrates a user's difficulty in finding the Study Plan.
+
+The user's first attempt at locating the Study Plan was through **NTTG Committees**. 
+Looking at the options available, the user announced some confusion.
+
+"It isn't really an 890 process." 
+
+The user was expecting to see a hyperlink to the Order 1000 Process documents 
+from the committees (since the committees where the people working on developing 
+the process documents), but it wasn't listed.
+
+> So, I'm going to go back. Because, that wasn't helpful.
+
+The second try through the user tried **NTTG Order 1000 Process** in the main 
+menu. After selecting **NTTG Order 1000 Regional Planning and Cost Allocation Process** 
+the user looked over the options it returned: a list of the different things that 
+occur in the process broken out by quarter.
+
+> I'm not exactly sure where I'm going to find my Study Plan based on those two
+> things.
+
+Again, the user decided to go back and try again.
+
+This time the user selected **Documents** from the main menu and then followed 
+the nested folders though **NTTG Committees** > **Planning** > 
+**FERC Order 1000 Process** > **2014-2015 NTTG Planning Cycle**. This approach
+is similar to the one the user took from the NTTG Commitees main menu item, except
+this time there is a selection for the Order 1000 process. 
+
+Inside the **2014-2015 NTTG Planning Cycle** folder, the user expected to find 
+the study plan. The user located it within the option, 
+**Quarter 2 - Data Evaluation and Study Plan Development**. 
+
+> So I _was_ there, but I didn't understand that I had documents available on
+> the last process I was looking at.
+> 
+> [...] The thing that was a little bit misleading on that one is that it didn't
+> reflect that there were documents I could see. When I came in through the 
+> Documents, I could see how many files where there.
+
 # Website Analytics
 
 For visitor analytics, the only current example is the "Hits" counter on individual 
@@ -385,6 +547,27 @@ for compliance with regulations would be put in serious risk.
 
 > I've never seen the back-end of [the NTTG website], I've always relied on the
 > project coordinator ... to work through the background on this.
+
+The only way for stakeholders, funders, and commitee members to get their content
+up on the site is to go through NTTG staff.
+
+## Creating Content with Subcommittees
+
+Subcommittees are non-public, but are still working on creating documents and 
+solving problems. Some users desire to have a place where subcomittee members 
+can collaborate privately. 
+
+NTTG members do have access to at least one SharePoint site hosted in Office 
+365, but it hasn't seen very much adoption among the subcommittee members. 
+Some users refuse to make use of it for legal reasons.
+
+Instead, collaboration tends to happen through emailing documents around (with 
+multiple people having multiple changes, and somebody trying to merge those 
+changes).
+
+To organize meetings for the subcommittees, NTTG emails a date and time to all 
+of the subcommittee members and provides information about how to connect to 
+each other.
 
 # Regulation Compliance
 
