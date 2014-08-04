@@ -569,6 +569,18 @@ To organize meetings for the subcommittees, NTTG emails a date and time to all
 of the subcommittee members and provides information about how to connect to 
 each other.
 
+## Backed Up Data
+
+The website nttg.biz has the **Basic Backup Service** from SiteGround. A stable
+website would be able to provide backups at least as robust as the basic 
+backup service.
+
+The **Basic Backup Service** seems to be a daily backup of the website files 
+for the last 30 days. The backup seems to run at about 5 am CDT every day. 
+
+This services also seems to include a daily backup of the website database for
+the last 30 days.
+
 # Regulation Compliance
 
 To comply with the regulations that NTTG and its funders are subject to, nttg.biz
