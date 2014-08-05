@@ -79,14 +79,14 @@ Once registered, users can upload files (via **Documents** > **Submit File**).
 Public users only have access to content that is published for availability on 
 the website front end.
 
-![Relative level of access for the identified user types.](img/user-types.png)
+Public Users are users that have not logged in. That means that a Public User 
+can also be an Administrative User or Private Access User, but have not logged 
+in to take advantage of the increased capabilities of those two groups.
+Currently, funders, stakeholders, and the general public all typically access 
+nttg.biz as a public user.
 
-Public Users can also be Administrative Users or Private Access Users, depending
-on whether they are logged in to nttg.biz or not. Funders, stakeholders, and 
-the general public will all typically access nttg.biz as a public user.
-
-These user types use nttg.biz to gain access to meetings (meetings they are 
-attending, as well as meetings that they are leading), to look for documents, 
+Public Users access nttg.biz to get information about meetings (meetings they 
+are attending, as well as meetings that they are leading), to look for documents, 
 and to add content to the site.
 
 ## Notable Cross-Type Users
@@ -94,17 +94,20 @@ and to add content to the site.
 There are a few notable users that fall into two or more of the user type
 categories.
 
-### Other NTTG Staff
+### NTTG Members and Consultants
 
-While some of the NTTG staff are administrative users, not all are. Despite 
-restricted access (at the user permissions level), the NTTG staff has significant
-authority to influence the layout, design, information structure, and content
-of nttg.biz. Without a position at NTTG, these staff members would be limited 
-to the same influence that a Public Access User holds.
+While some members of NTTG and its consultants are administrative users, not 
+all are. Despite restricted access (at the user permissions level), NTTG members
+and consultants have significant authority to influence the layout, design, 
+information structure, and content of nttg.biz. Without a membership with NTTG
+(or a consultant relationship with NTTG), these individuals would be limited 
+to the same influence that a Public User holds.
 
 To initiate updates, non-administrative users at NTTG communicate directly with 
 the administrative users (via phone calls or email) to direct the administrators
 through the changes step-by-step.
+
+![Relative level of access for the identified user types.](img/user-types.png)
 
 # User Registration
 
@@ -187,7 +190,8 @@ A large portion of the content on the website is text. The text is updated by
 administrative users. They first log in through the front end and then perform 
 their edits within WYSIWYG text boxes and single line text boxes.
 
-This data is updated "maybe once every two years."
+This data is updated infrequently: between once every few months to once every
+two years.
 
 ## Adobe Acrobat Files
 
@@ -206,37 +210,17 @@ nttg.biz; the website serves primarily as a document repository to keep NTTG
 
 ![Publicly available content includes items like approved biennial reports. Content that has not been approved for public consumption is not available to public users.](img/public-content.png)
 
-The current process for uploading meeting notes is as follows:
+Uploading meeting notes currently includes an elaborate process for taking notes, 
+making edits to the notes, merging changes from multiple sources into a single
+document, and receiving signoff. Once signoff has been achieved, the notes need
+to be uploaded into the proper location of DOCMAN. 
 
-1. While the meeting occurs a note taker takes notes. In most cases the note 
-   taker is an administrative user of the website.
+Figuring out the proper location can be a time consuming process involving multiple 
+browser windows (at least one for the admin interface and at least one to reference 
+the front end display structure) and hunting through deeply nested menus.
 
-2. The note taker saves the notes in docx format and sends the notes out to all 
-   of the stakeholders.
-
-3. If a stakeholder has changes to make they will either:
-    
-    a. Turn on track changes, make edits to the document, save the document as 
-       a docx, and email the file back to the note taker, or
-    
-    b. Raise their concerns at the next meeting.
-
-4. At the next meeting, all stakeholders will be asked if they have any objections 
-   to making the notes public. 
-
-5. Until a quorum is reached with no objections, the notes will remain private.
-
-6. When a quorum is reached with no objections, the administrative user will 
-   convert the notes to a pdf and upload them to the website via the DOCMAN feature.
-    
-    a. The files need to be uploaded into the proper location of DOCMAN. Figuring 
-       out the proper location can be a time consuming process involving multiple 
-       browser windows (at least one for the admin interface and at least one 
-       to reference the front end display structure) and hunting through deeply
-       nested menus.
-
-       This approach to content organization means that a new category is created
-       for each committee meeting.
+This approach to content organization means that a new category is created
+for each committee meeting.
 
 The process for uploading proposals is very similar to the process of uploading 
 meeting notes, with one difference: there is no meeting at which to take notes, 
@@ -462,7 +446,7 @@ Looking at the options available, the user announced some confusion.
 "It isn't really an 890 process." 
 
 The user was expecting to see a hyperlink to the Order 1000 Process documents 
-from the committees (since the committees where the people working on developing 
+from the committees (since the committees were the people working on developing 
 the process documents), but it wasn't listed.
 
 > So, I'm going to go back. Because, that wasn't helpful.
@@ -606,14 +590,15 @@ or anybody else. It allows everyone to have the same data at the same time.
 
 ## Public Meetings and the Calendar
 
-The calendar is for listing public meeting notices for the stakeholder meetings 
-and the steering committee meetings. Notice of upcoming meetings must be posted
-at least 7 days in advance.
+The calendar is for listing public meeting notices for the stakeholder meetings,
+Steering Committee meetings, Planning Committee meetings, and the Cost Allocation
+Committee meetings. Notice of upcoming meetings must be posted at least 7 days 
+in advance.
 
 ## Contact
 
 The public needs to have a way to contact NTTG. The contact method needs to be 
-in line with all of their attachment K filings.
+in line with all of their Attachment K filings.
 
 > Every transmission provider would have to do a new filing with FERC if we 
 > were to change this [contact method].
