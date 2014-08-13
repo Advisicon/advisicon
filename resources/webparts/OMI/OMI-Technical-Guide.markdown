@@ -2,7 +2,7 @@
 title: Technical Guide
 version: 1.0
 date: August 5, 2014
-client_logo: omi.png
+client_logo: OMI_logo_2x4.jpg
 
 ---
 
@@ -38,7 +38,7 @@ Example: [https://advisicondemo2.sharepoint.com/sites/pwa/_api/ProjectData/Issue
 Available queries visible at [https://advisicondemo2.sharepoint.com/sites/pwa/_api/ProjectData/$metadata]()
 
 ![connecting to a data feed](img/data-connection-wizard-connect-to-a-data-feed.png)
-![selecting a table](img/data-connection-wizard-select-tables)
+![selecting a table](img/data-connection-wizard-select-tables.png)
 
 Excel 2013 allowed for combining multiple queries into a related dataset, giving 
 us the ability to present the relationship between the Risks and Issues Data 
@@ -52,8 +52,8 @@ not have Risks or Issues associated with them.
 
 ## Updating Spreadsheet
 
-The Excel spreadsheet “Risk_Issues_RollUp.xlsx” need to be configured to draw 
-data from the company’s project center.
+The Excel spreadsheet "Risk_Issues_RollUp.xlsx" need to be configured to draw 
+data from the company's project center.
 
 **STEP 1**: Open the spreadsheet in Excel
 
@@ -71,14 +71,14 @@ Projects:
 Remove the 2 URLs: `https://advisicondemo2.sharepoint.com/sites/pwa` replacing 
 them with the URL for the Project Web App ex: `https://ormutual.sharepoint.com/sites/pwa/`
 
-**STEP 3.2**: Save changes by clicking “OK”
+**STEP 3.2**: Save changes by clicking "OK"
 
 ![Update the URLs in the source and base url variables](img/edit-connection-url.png)
 
 **STEP 3.3 – 3.6**: Update each of the 3 connections in the same way: Issues, 
 Risks, and Projects
 
-## Set up “Advisicon Reports” Document Library
+## Set up "Advisicon Reports" Document Library
 
 On the website where you would like the dashboard
 
@@ -86,15 +86,15 @@ On the website where you would like the dashboard
 
 ![Add an app to PWA](img/add-an-app.png)
 
-**STEP 1.1**: Click “Document Library” 
+**STEP 1.1**: Click "Document Library" 
 
 ![Add a document library app](img/add-document-library.png)
 
-**STEP 1.2**: Click “Advanced Options” 
+**STEP 1.2**: Click "Advanced Options" 
 
 ![Advanced options gets you more options](img/advanced-document-library-options.png)
 
-**STEP 1.3**: Name it “Advisicon Reports”
+**STEP 1.3**: Name it "Advisicon Reports"
 
 **STEP 1.4**: Give it a description
 
@@ -102,7 +102,7 @@ On the website where you would like the dashboard
 
 **STEP 1.6**: Document Template: Microsoft Excel Spreadsheet
 
-**STEP 2**: Upload the excel report “Risks_Issues_RollUp.xlsx” to the SharePoint library 
+**STEP 2**: Upload the excel report "Risks_Issues_RollUp.xlsx" to the SharePoint library 
 
 ![Uploading a local Excel file to a SharePoint document library](img/upload-local-excel-report.png)
 
@@ -133,7 +133,7 @@ _Repeat this process once each for issues data and risks data_
 
 **STEP 1.1**: Go to Advisicon Reports library
 
-**STEP 1.2**: Right click on the Name and choose “Copy Shortcut”
+**STEP 1.2**: Right click on the Name and choose "Copy Shortcut"
 
 ![Copying a url to a resource](img/copy-shortcut.png)
 
@@ -149,14 +149,14 @@ Add a Web Part
 ![Add a Web Part link](img/add-a-webpart.png)
 
 **STEP 2.3**: From the list of web parts choose Business Data -> Excel Web 
-Access and click “Add”
+Access and click "Add"
 
 ![Add an Excel Web Access Web Part](img/add-excel-web-access.png)
 
 **STEP 3**: Configure the Web Part
 
 **STEP 3.1**: In the top right-hand corner of the recently added web part click 
-on the little down arrow and select “Edit Web Part”
+on the little down arrow and select "Edit Web Part"
 
 ![Edit the Web Part](img/edit-webpart.png)
 
@@ -170,9 +170,9 @@ on the little down arrow and select “Edit Web Part”
 
 ![Configure the Web Part](img/configure-webpart.png)
 
-**STEP 3.6**: On the bottom click “OK”
+**STEP 3.6**: On the bottom click "OK"
 
-**STEP 4**: When the page layout and lists look like you want click “Stop Editing”
+**STEP 4**: When the page layout and lists look like you want click "Stop Editing"
 
 ![Stop editing the page](img/stop-editing-page.png)
 
@@ -180,7 +180,7 @@ on the little down arrow and select “Edit Web Part”
 
 **STEP 1**: Verify the spreadsheet refreshes when you go to the page
 
-![The spreadsheet should now refesh](img/verify-refresh.png)
+![The spreadsheet should now refresh](img/verify-refresh.png)
 
 # Troubleshooting
 
