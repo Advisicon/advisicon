@@ -9,14 +9,26 @@ $for(header-includes)$
 $endfor$
 <office:body>
 <office:text>
+<draw:frame draw:style-name="Logo" 
+  draw:name="graphics1" 
+  text:anchor-type="paragraph" 
+  svg:width="1.6in"
+  svg:height="1.58in"
+  draw:z-index="0">
+  <draw:image xlink:href="../../src/img/logo.png"
+    xlink:type="simple"
+    xlink:show="embed"
+    xlink:actuate="onLoad"
+    draw:filter-name="&lt;All formats&gt;" />
+</draw:frame>
 $if(photo)$
 <draw:frame draw:style-name="Headshot" 
-  draw:name="graphics1" 
+  draw:name="graphics2" 
   text:anchor-type="paragraph" 
   svg:width="1.07in"
   svg:height="1.61in"
   draw:z-index="0">
-  <draw:image xlink:href="../../img/$photo$"
+  <draw:image xlink:href="../../src/img/$photo$"
     xlink:type="simple"
     xlink:show="embed"
     xlink:actuate="onLoad"
@@ -47,7 +59,17 @@ $endif$
 $if(job_title)$
 <text:p text:style-name="Job Title">$job_title$</text:p>
 $endif$
+$if(email)$
+<text:p>$email$</text:p>
+$endif$
 $body$
+<text:p text:style-name="Heading 2">Contact</text:p>
+<text:section text:style-name="ContactSection" text:name="ContactSection">
+  <text:p>Phone: (866) 363-3847</text:p>
+  <text:p>Cell: $cell_phone$</text:p>
+  <text:p>Email: $email$</text:p>
+  <text:p>URL: www.Advisicon.com</text:p>
+</text:section>
 $for(include-after)$
 $include-after$
 $endfor$

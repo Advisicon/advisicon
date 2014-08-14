@@ -4,6 +4,7 @@ job_title: Director of Professional Services
 email: ken.loewen@advisicon.com
 photo: ken-loewen.jpg
 credentials: [CPA, CGMA, CMA, MBA]
+cell_phone: '\(425\) 495-7035'
 ---
 
 ## Professional Summary
