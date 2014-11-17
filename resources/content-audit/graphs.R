@@ -40,7 +40,15 @@ plot(dslice$Flesch.Kincaid.Reading.Ease, dslice$bounce.rate,
   xlab="Flesch Kincaid Reading Ease", 
   main="Effect of Readability on Bounce Rate", 
   col=rgb(0,0,0,0.25),
-  cex=1.5)
+  cex=1.5,
+  yaxt="n"
+)
+axis(
+  2,
+  at=pretty(dslice$bounce.rate),
+  lab=paste0(pretty(dslice$bounce.rate) * 100, "%"),
+  las=TRUE
+)
 abline(lm(dslice$bounce.rate ~ dslice$Flesch.Kincaid.Reading.Ease),
   col=rgb(1,0,0,0.5))
 dev.off()
@@ -74,11 +82,30 @@ dev.off()
 pdf("effect-of-cta-no-on-bounce-rate.pdf")
 plot(data$cta.count, data$bounce.rate, 
   pch=20,
-  col=rgb(0,0,0,0.25),
   xlab="# of CTAs",
   ylab="Bounce Rate",
   main="Effect of CTA # on Bounce Rate",
-  cex=1.5
+  yaxt="n",
+  type="n",
+  cex=.5,
+  bty="n"
+)
+dslice <- data[c("cta.count", "bounce.rate", "Avg..Time.on.Page")]
+dslice[dslice=="1899-12-31 00:00:00"] <- NA
+dslice <- dslice[rowSums(is.na(dslice)) == 0,]
+dslice.sum <- aggregate(dslice$bounce.rate, by=list(dslice$cta.count), FUN=mean)
+axis(
+  2,
+  at=pretty(dslice$bounce.rate),
+  lab=paste0(pretty(dslice$bounce.rate) * 100, "%"),
+  las=TRUE,
+  col=rgb(.125,.125,.125,1)
+)
+polygon(
+  c(0,dslice.sum$Group.1, tail(dslice.sum$Group.1, n=1)), 
+  c(0, dslice.sum$x, 0),
+  col=rgb(.125,.125,.125,1),
+  border=NA
 )
 dev.off()
 
@@ -175,6 +202,7 @@ dslice[dslice=="1899-12-31 00:00:00"] <- NA
 dslice <- dslice[rowSums(is.na(dslice)) == 0,]
 
 # Create graph: Effect of Page Value on Bounce Rate and Exit %
+pdf("effect-of-page-value-on-bounce-and-exit.pdf")
 plot(dslice$page.value, dslice$bounce.rate,
   pch=20,
   cex=0.5,
@@ -219,6 +247,7 @@ legend(
   border=NA,
   bty="n"
 )
+dev.off()
 
 
 # ###########################################################################
