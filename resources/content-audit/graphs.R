@@ -24,6 +24,14 @@ data <- readWorksheetFromFile(excel.file, sheet="Advisicon")
 
 # ###########################################################################
 
+# Variables
+
+color.primary <- rgb(.125,.125,.125,1)
+color.secondary <- rgb(.625,.125,.125,1)
+
+# ###########################################################################
+
+
 # Create slice
 dslice <- data[c("Flesch.Kincaid.Reading.Ease", "bounce.rate", "Avg..Time.on.Page")]
 
@@ -39,7 +47,7 @@ plot(dslice$Flesch.Kincaid.Reading.Ease, dslice$bounce.rate,
   ylab="Bounce Rate", 
   xlab="Flesch Kincaid Reading Ease", 
   main="Effect of Readability on Bounce Rate", 
-  col=rgb(0,0,0,0.25),
+  col=adjustcolor(color.primary, 0.25),
   cex=1.5,
   yaxt="n"
 )
@@ -50,7 +58,8 @@ axis(
   las=TRUE
 )
 abline(lm(dslice$bounce.rate ~ dslice$Flesch.Kincaid.Reading.Ease),
-  col=rgb(1,0,0,0.5))
+  col=adjustcolor(color.secondary, 0.75)
+)
 dev.off()
 
 # ---------------------------------------------------------------------------
@@ -70,41 +79,51 @@ plot(dslice$Flesch.Kincaid.Reading.Ease, dslice$Avg..Time.on.Page,
   ylab="Avg. Time on Page", 
   xlab="Flesch Kincaid Reading Ease", 
   main="Effect of Readability on Page Visit Length", 
-  col=rgb(0,0,0,0.25),
+  col=adjustcolor(color.primary, 0.25),
   cex=1.5)
 abline(lm(dslice$Avg..Time.on.Page ~ dslice$Flesch.Kincaid.Reading.Ease), 
-  col=rgb(1,0,0,0.5))
+  col=adjustcolor(color.secondary, 0.5)
+)
 dev.off()
 
 # ---------------------------------------------------------------------------
 
 # Create graph: Effect of Readability on Page Visit Length
-pdf("effect-of-cta-no-on-bounce-rate.pdf")
+pdf("effect-of-cta-no-on-bounce-and-exit.pdf")
 plot(data$cta.count, data$bounce.rate, 
   pch=20,
   xlab="# of CTAs",
   ylab="Bounce Rate",
-  main="Effect of CTA # on Bounce Rate",
+  main="Effect of CTA # on Bounce Rate and Exit %",
   yaxt="n",
   type="n",
   cex=.5,
   bty="n"
 )
-dslice <- data[c("cta.count", "bounce.rate", "Avg..Time.on.Page")]
+dslice <- data[c("cta.count", "bounce.rate", "exit..", "Avg..Time.on.Page")]
 dslice[dslice=="1899-12-31 00:00:00"] <- NA
 dslice <- dslice[rowSums(is.na(dslice)) == 0,]
-dslice.sum <- aggregate(dslice$bounce.rate, by=list(dslice$cta.count), FUN=mean)
+dslice.bounce <- aggregate(dslice$bounce.rate, by=list(dslice$cta.count), FUN=mean)
+dslice.exit <- aggregate(dslice$exit.., by=list(dslice$cta.count), FUN=mean)
 axis(
   2,
   at=pretty(dslice$bounce.rate),
   lab=paste0(pretty(dslice$bounce.rate) * 100, "%"),
   las=TRUE,
-  col=rgb(.125,.125,.125,1)
+  col=color.primary
 )
 polygon(
-  c(0,dslice.sum$Group.1, tail(dslice.sum$Group.1, n=1)), 
-  c(0, dslice.sum$x, 0),
-  col=rgb(.125,.125,.125,1),
+  c(0,dslice.bounce$Group.1, tail(dslice.bounce$Group.1, n=1)), 
+  c(0, dslice.bounce$x, 0),
+  col=color.primary,
+  border=NA,
+  density=30,
+  angle=30
+)
+polygon(
+  c(0, dslice.exit$Group.1, tail(dslice.exit$Group.1, n=1)),
+  c(0, dslice.exit$x, 0),
+  col=color.primary,
   border=NA
 )
 dev.off()
@@ -116,23 +135,42 @@ pdf("flesch-kincaid-reading-ease-distribution.pdf")
 hist(data$Flesch.Kincaid.Reading.Ease,
   main="Distribution of Flesch Kincaid Reading Ease for Advisicon Content",
   xlab="Flesch Kincaid Reading Ease",
-  breaks=24)
+  breaks=24,
+  col=color.primary,
+  border="white"
+)
 boxplot(data$Flesch.Kincaid.Reading.Ease,
   horizontal=TRUE,
   at=59,
   add=TRUE,
-  axes=FALSE)
+  axes=FALSE,
+  border=color.primary
+)
 dev.off()
 
 # ---------------------------------------------------------------------------
 
 # Create graph: Density of Page Value
 pdf("page-value-density.pdf")
-hist(data$page.value, 
+
+dslice <- data[c("page.value", "Avg..Time.on.Page")]
+dslice[dslice=="1899-12-31 00:00:00"] <- NA
+dslice <- dslice[rowSums(is.na(dslice)) == 0,]
+
+hist(dslice$page.value, 
   breaks=15, 
   freq=FALSE, 
-  xlab="Page Value ($)", 
-  main="Density of Page Value for Advisicon Content")
+  xlab="Page Value", 
+  xaxt="n",
+  main="Density of Page Value for Advisicon Content",
+  col=color.primary,
+  border="white"
+)
+axis(
+  1,
+  at=pretty(dslice$page.value),
+  lab=paste0("$", pretty(dslice$page.value))
+)
 dev.off()
 
 # ---------------------------------------------------------------------------
@@ -185,13 +223,39 @@ axis(2,
   lab=paste0(pretty(dslice$bounce.rate) * 100, "%"),
   las=TRUE
 )
-points(dslice$unique.images..media..documents, dslice$bounce.rate * 100, cex=0.5, col=rgb(0.75,0,0,0.125))
-points(dslice$unique.images..media..documents, dslice$exit.. * 100, cex=0.5, col=rgb(0,0,0.75,0.125))
-lines(dslice.bounce$Group.1, dslice.bounce$x * 100, type="l", lwd=2, col=rgb(0.9,0,0,0.5))
-lines(dslice.exit$Group.1, dslice.exit$x * 100, type="l", lwd=2, col=rgb(0,0,0.9,0.5))
+points(
+  dslice$unique.images..media..documents, 
+  dslice$bounce.rate * 100, 
+  cex=0.5, 
+  col=adjustcolor(color.primary, 0.125)
+)
+points(
+  dslice$unique.images..media..documents, 
+  dslice$exit.. * 100, 
+  cex=0.5, 
+  col=adjustcolor(color.secondary, 0.125)
+)
+lines(
+  dslice.bounce$Group.1, 
+  dslice.bounce$x * 100, 
+  type="l", 
+  lwd=2, 
+  col=adjustcolor(color.primary, 0.75)
+)
+lines(
+  dslice.exit$Group.1, 
+  dslice.exit$x * 100, 
+  type="l", 
+  lwd=2, 
+  col=adjustcolor(color.secondary, 0.75)
+)
 legend(
-  50, 100, c("bounce rate", "exit %"), cex=0.8, col=c(rgb(0.9,0,0,0.5), rgb(0,0,0.9,0.5)),
-  lty=1
+  50, 100, 
+  c("bounce rate", "exit %"), 
+  cex=0.8, 
+  fill=c(adjustcolor(color.primary, 0.75), adjustcolor(color.secondary, 0.75)),
+  border=NA,
+  bty="n"
 )
 dev.off()
 
@@ -229,13 +293,13 @@ dslice.sort.value <- sort(dslice$page.value, decreasing=FALSE)
 polygon(
   c(0, dslice.sort.value, tail(dslice.sort.value, n=1)), 
   c(0, dslice$bounce.rate, 0),  
-  col=rgb(.9,0,0,.25), 
+  col=adjustcolor(color.primary, .25), 
   border=NA
 )
 polygon(
   c(0, dslice.sort.value, tail(dslice.sort.value, n=1)), 
   c(0, dslice$exit.., 0),  
-  col=rgb(0,0,.9,.25), 
+  col=adjustcolor(color.secondary, .25), 
   border=NA
 )
 legend(
@@ -243,12 +307,37 @@ legend(
   tail(sort(dslice$bounce.rate, decreasing=FALSE), n=1), 
   c("Bounce Rate", "Exit %"), 
   cex=0.8, 
-  fill=c(rgb(.9,0,0,.25), rgb(0,0,.9,.25)),
+  fill=c(adjustcolor(color.primary, .25), adjustcolor(color.secondary, .25)),
   border=NA,
   bty="n"
 )
 dev.off()
 
+# ---------------------------------------------------------------------------
+
+dslice <- data[c("Flesch.Kincaid.Grade.Level", "links.in", "Avg..Time.on.Page")]
+dslice[dslice=="1899-12-31 00:00:00"] <- NA
+dslice <- dslice[rowSums(is.na(dslice)) == 0,]
+
+# Create graph: Effect of Readability on the Number of Incoming Links
+pdf("effect-of-readability-on-no-incoming-links.pdf")
+plot(
+  dslice$Flesch.Kincaid.Grade.Level,
+  dslice$links.in,
+  type="n",
+  bty="n",
+  xlab="Flesch Kincaid Grade Level",
+  ylab="Number of Links In",
+  main="Effect of Readability on the Number of Incoming Links"
+)
+dslice.sort.ease <- sort(dslice$Flesch.Kincaid.Grade.Level, decreasing=FALSE)
+polygon(
+  c(head(dslice.sort.ease, n=1), dslice.sort.ease, tail(dslice.sort.ease, n=1)),
+  c(0, dslice$links.in, 0),
+  border=NA,
+  col=color.primary
+)
+dev.off()
 
 # ###########################################################################
 
@@ -259,3 +348,4 @@ rm('dslice.sum')
 rm('dslice.bounce')
 rm('dslice.exit')
 rm('dslice.sort.value')
+rm('dslice.sort.ease')
