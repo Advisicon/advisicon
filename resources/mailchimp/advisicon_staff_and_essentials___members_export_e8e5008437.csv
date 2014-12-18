@@ -1,0 +1,4 @@
+"Email Address","First Name","Last Name",EMAIL_TYPE,MEMBER_RATING,OPTIN_TIME,OPTIN_IP,CONFIRM_TIME,CONFIRM_IP,LATITUDE,LONGITUDE,GMTOFF,DSTOFF,TIMEZONE,CC,REGION,LAST_CHANGED,LEID,EUID,NOTES
+cindy.lewis@advisicon.com,Cindy,Lewis,html,2,,,"2014-01-23 09:06:10",75.148.83.17,32.9336000,-97.0975000,-6,-5,America/Indiana/Tell_City,US,TX,"2014-01-23 09:06:10",97632597,8f0551e28c,
+rick.gardner@advisicon.com,Rick,Gardner,html,2,,,"2014-01-23 09:06:10",75.148.83.17,,,,,,,,"2014-01-23 09:06:10",97632601,c0c195014f,
+tye.trepanier@advisicon.com,Tye,Trepanier,html,3,,,"2014-01-23 09:06:10",75.148.83.17,45.6713000,-122.5600000,-8,-7,America/Los_Angeles,US,WA,"2014-01-23 09:06:10",97632593,ab3902ca85,
