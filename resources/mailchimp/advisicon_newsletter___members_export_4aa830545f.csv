@@ -1,4 +1,4 @@
-Email Address,First Name,Last Name,Business Phone,Business Phone Extension,Address 1: Street 1,Address 1: Street 2,Address 1: City,Address 1: State/Province,Address 1: ZIP/Postal Code,Parent Customer,Address 1: Street 1,Full Name,EMAIL_TYPE,MEMBER_RATING,OPTIN_TIME,OPTIN_IP,CONFIRM_TIME,CONFIRM_IP,LATITUDE,LONGITUDE,GMTOFF,DSTOFF,TIMEZONE,CC,REGION,LAST_CHANGED,LEID,EUID,NOTES
+Email Address,First Name,Last Name,Business Phone,Business Phone Extension,Address 1: Street 1,Address 1: Street 2,Address 1: City,Address 1: State/Province,Address 1: ZIP/Postal Code,Parent Customer,Address 1: Country,Full Name,EMAIL_TYPE,MEMBER_RATING,OPTIN_TIME,OPTIN_IP,CONFIRM_TIME,CONFIRM_IP,LATITUDE,LONGITUDE,GMTOFF,DSTOFF,TIMEZONE,CC,REGION,LAST_CHANGED,LEID,EUID,NOTES
 umesh@acionyx.com,Umesh,Hiriyannaiah,408.366.2908,21,20195 Stevens Creek Blvd,,Cupertino,CALIFORNIA,95014,Acionyz,          US,Umesh Hiriyannaiah,html,2,,,2013-07-09 12:01:29,,37.3061,-121.999,-8,-7,America/Los_Angeles,US,CA,2013-07-09 12:01:29,88220341,11bf31c8b1,
 rick.gardner@advisicon.com,Rick,Gardner,541 306 3947,,205084 Dylan Loop,,Bend,OR,97702,Advisicon Inc.,          US,Rick. Gardner,html,2,,,2013-07-09 12:01:29,,,,,,,,,2013-07-09 12:01:29,88220345,c0c195014f,
 Steve.Richardson@AECInc.com,Steve,Richardson,503-668-0656,262,,,,,,AEC,,Steve Richardson,html,4,,,2013-07-09 12:01:29,,45.6718,-122.511,-8,-7,America/Los_Angeles,US,WA,2013-07-09 12:01:29,88220349,e90552394c,
@@ -209,7 +209,7 @@ ed.w.rosenthal@pepsico.com,Ed,"Rosenthal, Sr.",312-777-3060,,227 W. Monroe Stree
 ty.harper@pioneerpacific.edu,Ty,Harper,503-654-8000,2123,,,,,,Pioneer Pacific College,,Ty Harper,html,2,,,2013-07-09 12:01:35,,45.4872,-122.599,-8,-7,America/Los_Angeles,US,OR,2013-07-09 12:01:35,88221713,503e890eaa,
 Chavonne.Hoyle@pmi.org,Chavonne,Hoyle,,,,,,,,PMI,,Chavonne Hoyle,html,2,,,2013-07-09 12:01:35,,,,,,,,,2013-07-09 12:01:35,88221717,6d12235527,
 lcottier@pmichapters-mexico.org,Lissette Cottier,Poblete,5605-3543,,,,,,,PMI,,Lissette Cottier Poblete,html,2,,,2013-07-09 12:01:35,,,,,,,,,2013-07-09 12:01:35,88221733,eb5367d481,
-repsupport@pmi.org,REP Support,,,,,,,,,PMI,REP Support,html,2,,,2013-07-09 12:01:35,,,,,,,,,2013-07-09 12:01:35,88221737,c65bf2c925,,
+repsupport@pmi.org,REP Support,,,,,,,,,PMI,,REP Support,html,2,,,2013-07-09 12:01:35,,,,,,,,,2013-07-09 12:01:35,88221737,c65bf2c925,
 horriganrx@state.gov,Bob,Horrigan,,,,,,,,PMI College Performance Management,,Bob Horrigan,html,4,,,2013-07-09 12:01:35,,38.8373,-76.9187,-5,-4,America/New_York,US,MD,2013-07-09 12:01:35,88221745,3ab6c33311,
 acp_certification@pmi-portland.org,Dottie,Love,916.367.9919,,,,,,,PMI -Portland Chapter,,Dottie Love,html,4,,,2013-07-09 12:01:35,,45.5409,-122.83,-8,-7,America/Los_Angeles,US,OR,2013-07-09 12:01:35,88221749,6b70852daf,
 speaker@pmi-portland.org,Lori,Reed,503.880.6182,,,,,,,PMI -Portland Chapter,,Lori Reed,html,5,,,2013-07-09 12:01:35,,45.3553,-122.834,-8,-7,America/Los_Angeles,US,OR,2013-07-09 12:01:35,88221753,212e71311f,
@@ -219,7 +219,7 @@ lattuca@yahoo.com,Carmelo,Lattuca,,,,,,,,PMI-SVC,,Carmelo Lattuca,html,4,,,2013-
 RazzleberryRose@aol.com,Rose,Elley,,,,,,,,PMI-SVC,,Rose Elley,html,2,,,2013-07-09 12:01:36,,,,,,,,,2013-07-09 12:01:36,88221793,5c124bf752,
 rcbu24@gmail.com,Robert C.,Buckley,,,,,,,,PMI-SVC,,Robert C. Buckley,html,4,,,2013-07-09 12:01:36,,34.4061,-118.535,-8,-7,America/Los_Angeles,US,CA,2013-07-09 12:01:36,88221797,fdf043dff3,
 vickiecleary@sbcglobal.net,Vickie,Cleary,,,,,,,,PMI-SVC,,Vickie Cleary,html,2,,,2013-07-09 12:01:36,,40.7762,-73.9639,-5,-4,America/New_York,US,NY,2013-07-09 12:01:36,88221805,0416632b24,
-president@pmi-wcc.org,PMI President,,,,,,,,,PMI-WCC,PMI President,html,4,,,2013-07-09 12:01:36,,37.8903,-122.568,-8,-7,America/Los_Angeles,US,CA,2013-07-09 12:01:36,88221809,7211edddb7,,
+president@pmi-wcc.org,PMI President,,,,,,,,,PMI-WCC,,PMI President,html,4,,,2013-07-09 12:01:36,,37.8903,-122.568,-8,-7,America/Los_Angeles,US,CA,2013-07-09 12:01:36,88221809,7211edddb7,
 npgoldman@pmoadvisors.com,Neil P.,Goldman,248-613-1912,,20221 Northville Place Dr. 2704,,Northville,Ml,48167,"PMO Advisors, LLC",          US,Neil P. Goldman,html,4,,,2013-07-09 12:01:36,,42.4237,-83.2998,-5,-4,America/Toronto,US,MI,2013-07-09 12:01:36,88221813,ecaa4cd0c1,
 art.spillman@portofportland.com,Art,Spillman,503-460-4133,,7000 NE Airport Way,,Portland,OR,97218,Port of Portland,          US,Art Spillman,html,4,,,2013-07-09 12:01:36,,45.6202,-123.112,-8,-7,America/Los_Angeles,US,OR,2013-07-09 12:01:36,88221817,c5bcbd7dfb,
 avi.patel@portofportland.com,Avi,Patel,503.415.6032,,,,,,,Port of Portland,,Avi Patel,html,4,,,2013-07-09 12:01:36,,45.6202,-123.112,-8,-7,America/Los_Angeles,US,OR,2013-07-09 12:01:36,88221821,e57d75d7a7,
